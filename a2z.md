@@ -1,12 +1,11 @@
 Julia Help Documentation
 ======================
-Generated on: 2024-11-29T03:10:38.716
+Generated on: 2024-11-29T03:16:27.543
 
 
 
-==================================================
 
-Help for abs:
+abs:
 ==================================================
 
 ```
@@ -37,8 +36,8 @@ julia> maximum(abs, [1, -2, 3, -4])
 ```
 
 
-==================================================
-Help for abs2:
+
+abs2:
 ==================================================
 
 ```
@@ -65,8 +64,8 @@ julia> sum(abs2, [1+2im, 3+4im])  # LinearAlgebra.norm(x)^2
 ```
 
 
-==================================================
-Help for abspath:
+
+abspath:
 ==================================================
 
 ```
@@ -94,8 +93,8 @@ abspath(path::AbstractString, paths::AbstractString...) -> String
 Convert a set of paths to an absolute path by joining them together and adding the current directory if necessary. Equivalent to `abspath(joinpath(path, paths...))`.
 
 
-==================================================
-Help for accumulate:
+
+accumulate:
 ==================================================
 
 ```
@@ -144,8 +143,8 @@ julia> accumulate(+, fill(1, 2, 5), dims=2, init=100.0)
 ```
 
 
-==================================================
-Help for accumulate!:
+
+accumulate!:
 ==================================================
 
 ```
@@ -193,8 +192,8 @@ julia> accumulate!(*, B, A, dims=2, init=10)
 ```
 
 
-==================================================
-Help for acos:
+
+acos:
 ==================================================
 
 ```
@@ -223,8 +222,8 @@ julia> acos(cos([0.5 0.1; -0.2 0.3]))
 ```
 
 
-==================================================
-Help for acosd:
+
+acosd:
 ==================================================
 
 ```
@@ -238,8 +237,8 @@ Compute the inverse cosine of `x`, where the output is in degrees. If `x` is a m
 
 
 
-==================================================
-Help for acosh:
+
+acosh:
 ==================================================
 
 ```
@@ -257,8 +256,8 @@ Compute the inverse hyperbolic matrix cosine of a square matrix `A`.  For the th
 [^AH16_4]: Mary Aprahamian and Nicholas J. Higham, "Matrix Inverse Trigonometric and Inverse Hyperbolic Functions: Theory and Algorithms", MIMS EPrint: 2016.4. [https://doi.org/10.1137/16M1057577](https://doi.org/10.1137/16M1057577)
 
 
-==================================================
-Help for acot:
+
+acot:
 ==================================================
 
 ```
@@ -274,8 +273,8 @@ acot(A::AbstractMatrix)
 Compute the inverse matrix cotangent of `A`. 
 
 
-==================================================
-Help for acotd:
+
+acotd:
 ==================================================
 
 ```
@@ -289,8 +288,8 @@ Compute the inverse cotangent of `x`, where the output is in degrees. If `x` is 
 
 
 
-==================================================
-Help for acoth:
+
+acoth:
 ==================================================
 
 ```
@@ -306,8 +305,8 @@ acoth(A::AbstractMatrix)
 Compute the inverse matrix hyperbolic cotangent of `A`. 
 
 
-==================================================
-Help for acsc:
+
+acsc:
 ==================================================
 
 ```
@@ -323,8 +322,8 @@ acsc(A::AbstractMatrix)
 Compute the inverse matrix cosecant of `A`. 
 
 
-==================================================
-Help for acscd:
+
+acscd:
 ==================================================
 
 ```
@@ -338,8 +337,8 @@ Compute the inverse cosecant of `x`, where the output is in degrees. If `x` is a
 
 
 
-==================================================
-Help for acsch:
+
+acsch:
 ==================================================
 
 ```
@@ -355,8 +354,8 @@ acsch(A::AbstractMatrix)
 Compute the inverse matrix hyperbolic cosecant of `A`. 
 
 
-==================================================
-Help for addenv:
+
+addenv:
 ==================================================
 
 ```
@@ -372,8 +371,8 @@ See also [`Cmd`](@ref), [`setenv`](@ref), [`ENV`](@ref).
 
 
 
-==================================================
-Help for adjoint:
+
+adjoint:
 ==================================================
 
 ```
@@ -478,8 +477,8 @@ adjoint(F::Factorization)
 Lazy adjoint of the factorization `F`. By default, returns an [`AdjointFactorization`](@ref) wrapper.
 
 
-==================================================
-Help for all:
+
+all:
 ==================================================
 
 ```
@@ -596,8 +595,8 @@ julia> all(i -> i > 0, A, dims=2)
 ```
 
 
-==================================================
-Help for all!:
+
+all!:
 ==================================================
 
 ```
@@ -629,8 +628,8 @@ julia> all!([1 1], A)
 ```
 
 
-==================================================
-Help for allequal:
+
+allequal:
 ==================================================
 
 ```
@@ -675,8 +674,8 @@ true
 ```
 
 
-==================================================
-Help for allunique:
+
+allunique:
 ==================================================
 
 ```
@@ -716,8 +715,8 @@ false
 ```
 
 
-==================================================
-Help for angle:
+
+angle:
 ==================================================
 
 ```
@@ -747,8 +746,8 @@ julia> rad2deg(angle(-1 - 1e-20im))
 ```
 
 
-==================================================
-Help for ans:
+
+ans:
 ==================================================
 
 ```
@@ -760,8 +759,8 @@ A type with no fields that is the type of [`nothing`](@ref).
 See also: [`isnothing`](@ref), [`Some`](@ref), [`Missing`](@ref).
 
 
-==================================================
-Help for any:
+
+any:
 ==================================================
 
 ```
@@ -878,8 +877,8 @@ julia> any(i -> i > 0, A, dims=2)
 ```
 
 
-==================================================
-Help for any!:
+
+any!:
 ==================================================
 
 ```
@@ -911,8 +910,8 @@ julia> any!([1 1], A)
 ```
 
 
-==================================================
-Help for append!:
+
+append!:
 ==================================================
 
 ```
@@ -951,8 +950,8 @@ See [`sizehint!`](@ref) for notes about the performance model.
 See also [`vcat`](@ref) for vectors, [`union!`](@ref) for sets, and [`prepend!`](@ref) and [`pushfirst!`](@ref) for the opposite order.
 
 
-==================================================
-Help for applicable:
+
+applicable:
 ==================================================
 
 ```
@@ -978,8 +977,8 @@ true
 ```
 
 
-==================================================
-Help for apropos:
+
+apropos:
 ==================================================
 
 ```
@@ -997,8 +996,8 @@ help?> "pattern"
 ```
 
 
-==================================================
-Help for argmax:
+
+argmax:
 ==================================================
 
 ```
@@ -1085,8 +1084,8 @@ julia> argmax(A, dims=2)
 ```
 
 
-==================================================
-Help for argmin:
+
+argmin:
 ==================================================
 
 ```
@@ -1176,8 +1175,8 @@ julia> argmin(A, dims=2)
 ```
 
 
-==================================================
-Help for arrayref:
+
+arrayref:
 ==================================================
 
 No documentation found for public symbol.
@@ -1191,8 +1190,8 @@ No documentation found for public symbol.
 ```
 
 
-==================================================
-Help for arrayset:
+
+arrayset:
 ==================================================
 
 No documentation found for public symbol.
@@ -1206,8 +1205,8 @@ No documentation found for public symbol.
 ```
 
 
-==================================================
-Help for arraysize:
+
+arraysize:
 ==================================================
 
 No documentation found for public symbol.
@@ -1223,8 +1222,8 @@ No documentation found for public symbol.
 ```
 
 
-==================================================
-Help for ascii:
+
+ascii:
 ==================================================
 
 ```
@@ -1248,8 +1247,8 @@ julia> ascii("abcdefgh")
 ```
 
 
-==================================================
-Help for asec:
+
+asec:
 ==================================================
 
 ```
@@ -1265,8 +1264,8 @@ asec(A::AbstractMatrix)
 Compute the inverse matrix secant of `A`. 
 
 
-==================================================
-Help for asecd:
+
+asecd:
 ==================================================
 
 ```
@@ -1280,8 +1279,8 @@ Compute the inverse secant of `x`, where the output is in degrees. If `x` is a m
 
 
 
-==================================================
-Help for asech:
+
+asech:
 ==================================================
 
 ```
@@ -1297,8 +1296,8 @@ asech(A::AbstractMatrix)
 Compute the inverse matrix hyperbolic secant of `A`. 
 
 
-==================================================
-Help for asin:
+
+asin:
 ==================================================
 
 ```
@@ -1339,8 +1338,8 @@ julia> asin(sin([0.5 0.1; -0.2 0.3]))
 ```
 
 
-==================================================
-Help for asind:
+
+asind:
 ==================================================
 
 ```
@@ -1354,8 +1353,8 @@ Compute the inverse sine of `x`, where the output is in degrees. If `x` is a mat
 
 
 
-==================================================
-Help for asinh:
+
+asinh:
 ==================================================
 
 ```
@@ -1373,8 +1372,8 @@ Compute the inverse hyperbolic matrix sine of a square matrix `A`.  For the theo
 [^AH16_5]: Mary Aprahamian and Nicholas J. Higham, "Matrix Inverse Trigonometric and Inverse Hyperbolic Functions: Theory and Algorithms", MIMS EPrint: 2016.4. [https://doi.org/10.1137/16M1057577](https://doi.org/10.1137/16M1057577)
 
 
-==================================================
-Help for asyncmap:
+
+asyncmap:
 ==================================================
 
 ```
@@ -1439,8 +1438,8 @@ julia> asyncmap(batch_func, 1:5; ntasks=2, batch_size=2)
 ```
 
 
-==================================================
-Help for asyncmap!:
+
+asyncmap!:
 ==================================================
 
 ```
@@ -1454,8 +1453,8 @@ Like [`asyncmap`](@ref), but stores output in `results` rather than returning a 
 
 
 
-==================================================
-Help for atan:
+
+atan:
 ==================================================
 
 ```
@@ -1504,8 +1503,8 @@ julia> atan(tan([0.5 0.1; -0.2 0.3]))
 ```
 
 
-==================================================
-Help for atand:
+
+atand:
 ==================================================
 
 ```
@@ -1520,8 +1519,8 @@ Compute the inverse tangent of `y` or `y/x`, respectively, where the output is i
 
 
 
-==================================================
-Help for atanh:
+
+atanh:
 ==================================================
 
 ```
@@ -1539,8 +1538,8 @@ Compute the inverse hyperbolic matrix tangent of a square matrix `A`.  For the t
 [^AH16_6]: Mary Aprahamian and Nicholas J. Higham, "Matrix Inverse Trigonometric and Inverse Hyperbolic Functions: Theory and Algorithms", MIMS EPrint: 2016.4. [https://doi.org/10.1137/16M1057577](https://doi.org/10.1137/16M1057577)
 
 
-==================================================
-Help for atexit:
+
+atexit:
 ==================================================
 
 ```
@@ -1560,8 +1559,8 @@ Exit hooks are allowed to call `exit(n)`, in which case Julia will exit with exi
 Note: Once all exit hooks have been called, no more exit hooks can be registered, and any call to `atexit(f)` after all hooks have completed will throw an exception. This situation may occur if you are registering exit hooks from background Tasks that may still be executing concurrently during shutdown.
 
 
-==================================================
-Help for atreplinit:
+
+atreplinit:
 ==================================================
 
 ```
@@ -1571,8 +1570,8 @@ atreplinit(f)
 Register a one-argument function to be called before the REPL interface is initialized in interactive sessions; this is useful to customize the interface. The argument of `f` is the REPL object. This function should be called from within the `.julia/config/startup.jl` initialization file.
 
 
-==================================================
-Help for axes:
+
+axes:
 ==================================================
 
 ```
@@ -1623,8 +1622,8 @@ julia> axes(A)
 ```
 
 
-==================================================
-Help for basename:
+
+basename:
 ==================================================
 
 ```
@@ -1650,8 +1649,8 @@ julia> basename("/home/myuser/")
 See also [`dirname`](@ref).
 
 
-==================================================
-Help for big:
+
+big:
 ==================================================
 
 ```
@@ -1680,8 +1679,8 @@ big(x)
 Convert a number to a maximum precision representation (typically [`BigInt`](@ref) or `BigFloat`). See [`BigFloat`](@ref BigFloat(::Any, rounding::RoundingMode)) for information about some pitfalls with floating-point numbers.
 
 
-==================================================
-Help for bind:
+
+bind:
 ==================================================
 
 ```
@@ -1743,8 +1742,8 @@ Bind `socket` to the given `host:port`. Note that `0.0.0.0` will listen on all d
   * If `reuseaddr=true`, multiple threads or processes can bind to the same address without error if they all set `reuseaddr=true`, but only the last to bind will receive any traffic.
 
 
-==================================================
-Help for binomial:
+
+binomial:
 ==================================================
 
 ```
@@ -1811,8 +1810,8 @@ Further generalizations to non-integer `k` are mathematically possible, but invo
   * [Binomial coefficient](https://en.wikipedia.org/wiki/Binomial_coefficient) on Wikipedia.
 
 
-==================================================
-Help for bitreverse:
+
+bitreverse:
 ==================================================
 
 ```
@@ -1836,8 +1835,8 @@ true
 ```
 
 
-==================================================
-Help for bitrotate:
+
+bitrotate:
 ==================================================
 
 ```
@@ -1867,8 +1866,8 @@ julia> bitstring(bitrotate(0b01110010, 8))
 ```
 
 
-==================================================
-Help for bitstring:
+
+bitstring:
 ==================================================
 
 ```
@@ -1890,8 +1889,8 @@ julia> bitstring(2.2)
 ```
 
 
-==================================================
-Help for broadcast:
+
+broadcast:
 ==================================================
 
 ```
@@ -1963,8 +1962,8 @@ julia> string.(("one","two","three","four"), ": ", 1:4)
 ```
 
 
-==================================================
-Help for broadcast!:
+
+broadcast!:
 ==================================================
 
 ```
@@ -1999,8 +1998,8 @@ julia> A
 ```
 
 
-==================================================
-Help for bswap:
+
+bswap:
 ==================================================
 
 ```
@@ -2028,8 +2027,8 @@ julia> string(bswap(1), base = 2)
 ```
 
 
-==================================================
-Help for bytes2hex:
+
+bytes2hex:
 ==================================================
 
 ```
@@ -2059,8 +2058,8 @@ julia> bytes2hex(b)
 ```
 
 
-==================================================
-Help for bytesavailable:
+
+bytesavailable:
 ==================================================
 
 ```
@@ -2079,8 +2078,8 @@ julia> bytesavailable(io)
 ```
 
 
-==================================================
-Help for cat:
+
+cat:
 ==================================================
 
 ```
@@ -2194,8 +2193,8 @@ julia> a * b
 ```
 
 
-==================================================
-Help for catch_backtrace:
+
+catch_backtrace:
 ==================================================
 
 ```
@@ -2205,8 +2204,8 @@ catch_backtrace()
 Get the backtrace of the current exception, for use within `catch` blocks.
 
 
-==================================================
-Help for cbrt:
+
+cbrt:
 ==================================================
 
 ```
@@ -2255,8 +2254,8 @@ true
 ```
 
 
-==================================================
-Help for cd:
+
+cd:
 ==================================================
 
 ```
@@ -2311,8 +2310,8 @@ julia> pwd()
 ```
 
 
-==================================================
-Help for ceil:
+
+ceil:
 ==================================================
 
 ```
@@ -2370,8 +2369,8 @@ julia> ceil(Hour(36), Day)
 Rounding to a `precision` of `Month`s or `Year`s is not supported, as these `Period`s are of inconsistent length.
 
 
-==================================================
-Help for cglobal:
+
+cglobal:
 ==================================================
 
 ```
@@ -2381,8 +2380,8 @@ Core.IntrinsicFunction <: Core.Builtin <: Function
 The `Core.IntrinsicFunction` function define some basic primitives for what defines the abilities and behaviors of a Julia program
 
 
-==================================================
-Help for checkbounds:
+
+checkbounds:
 ==================================================
 
 ```
@@ -2418,8 +2417,8 @@ checkbounds(A, I...)
 Throw an error if the specified indices `I` are not in bounds for the given array `A`.
 
 
-==================================================
-Help for checkindex:
+
+checkindex:
 ==================================================
 
 ```
@@ -2441,8 +2440,8 @@ false
 ```
 
 
-==================================================
-Help for chmod:
+
+chmod:
 ==================================================
 
 ```
@@ -2456,8 +2455,8 @@ Change the permissions mode of `path` to `mode`. Only integer `mode`s (e.g. `0o7
 
 
 
-==================================================
-Help for chomp:
+
+chomp:
 ==================================================
 
 ```
@@ -2476,8 +2475,8 @@ julia> chomp("Hello\n")
 ```
 
 
-==================================================
-Help for chop:
+
+chop:
 ==================================================
 
 ```
@@ -2505,8 +2504,8 @@ julia> chop(a, head = 5, tail = 5)
 ```
 
 
-==================================================
-Help for chopprefix:
+
+chopprefix:
 ==================================================
 
 ```
@@ -2532,8 +2531,8 @@ julia> chopprefix("Hamburger", "hotdog")
 ```
 
 
-==================================================
-Help for chopsuffix:
+
+chopsuffix:
 ==================================================
 
 ```
@@ -2559,8 +2558,8 @@ julia> chopsuffix("Hamburger", "hotdog")
 ```
 
 
-==================================================
-Help for chown:
+
+chown:
 ==================================================
 
 ```
@@ -2570,8 +2569,8 @@ chown(path::AbstractString, owner::Integer, group::Integer=-1)
 Change the owner and/or group of `path` to `owner` and/or `group`. If the value entered for `owner` or `group` is `-1` the corresponding ID will not change. Only integer `owner`s and `group`s are currently supported. Return `path`.
 
 
-==================================================
-Help for circcopy!:
+
+circcopy!:
 ==================================================
 
 ```
@@ -2610,8 +2609,8 @@ true
 ```
 
 
-==================================================
-Help for circshift:
+
+circshift:
 ==================================================
 
 ```
@@ -2672,8 +2671,8 @@ julia> circshift(a, -1)
 ```
 
 
-==================================================
-Help for circshift!:
+
+circshift!:
 ==================================================
 
 ```
@@ -2689,8 +2688,8 @@ Circularly shift, i.e. rotate, the data in `src`, storing the result in `dest`. 
 See also [`circshift`](@ref).
 
 
-==================================================
-Help for cis:
+
+cis:
 ==================================================
 
 ```
@@ -2728,8 +2727,8 @@ true
 ```
 
 
-==================================================
-Help for cispi:
+
+cispi:
 ==================================================
 
 ```
@@ -2755,8 +2754,8 @@ julia> cispi(0.25 + 1im)
 
 
 
-==================================================
-Help for clamp:
+
+clamp:
 ==================================================
 
 ```
@@ -2819,8 +2818,8 @@ Clamp `x` to lie within range `r`.
 
 
 
-==================================================
-Help for clamp!:
+
+clamp!:
 ==================================================
 
 ```
@@ -2848,8 +2847,8 @@ julia> clamp.((-4:4)', 0, Inf)
 ```
 
 
-==================================================
-Help for cld:
+
+cld:
 ==================================================
 
 ```
@@ -2872,8 +2871,8 @@ julia> cld.(-5:5, 3)'
 ```
 
 
-==================================================
-Help for clipboard:
+
+clipboard:
 ==================================================
 
 ```
@@ -2889,8 +2888,8 @@ clipboard() -> String
 Return a string with the contents of the operating system clipboard ("paste").
 
 
-==================================================
-Help for close:
+
+close:
 ==================================================
 
 ```
@@ -2915,8 +2914,8 @@ close(lock::LockMonitor)
 Release a pidfile lock.
 
 
-==================================================
-Help for closewrite:
+
+closewrite:
 ==================================================
 
 ```
@@ -2943,8 +2942,8 @@ julia> read(io, String)
 ```
 
 
-==================================================
-Help for cmp:
+
+cmp:
 ==================================================
 
 ```
@@ -3005,8 +3004,8 @@ julia> cmp("b", "β")
 ```
 
 
-==================================================
-Help for coalesce:
+
+coalesce:
 ==================================================
 
 ```
@@ -3033,8 +3032,8 @@ missing
 ```
 
 
-==================================================
-Help for code_llvm:
+
+code_llvm:
 ==================================================
 
 ```
@@ -3048,8 +3047,8 @@ If the `optimize` keyword is unset, the code will be shown before LLVM optimizat
 See also: [`@code_llvm`](@ref), [`code_warntype`](@ref), [`code_typed`](@ref), [`code_lowered`](@ref), [`code_native`](@ref).
 
 
-==================================================
-Help for code_lowered:
+
+code_lowered:
 ==================================================
 
 ```
@@ -3065,8 +3064,8 @@ The keyword `debuginfo` controls the amount of code metadata present in the outp
 Note that an error will be thrown if `types` are not leaf types when `generated` is `true` and any of the corresponding methods are an `@generated` method.
 
 
-==================================================
-Help for code_native:
+
+code_native:
 ==================================================
 
 ```
@@ -3084,8 +3083,8 @@ Prints the native assembly instructions generated for running the method matchin
 See also: [`@code_native`](@ref), [`code_warntype`](@ref), [`code_typed`](@ref), [`code_lowered`](@ref), [`code_llvm`](@ref).
 
 
-==================================================
-Help for code_typed:
+
+code_typed:
 ==================================================
 
 ```
@@ -3120,8 +3119,8 @@ julia> code_typed(+, (Float64, Float64))
 ```
 
 
-==================================================
-Help for code_warntype:
+
+code_warntype:
 ==================================================
 
 ```
@@ -3139,8 +3138,8 @@ See the [`@code_warntype`](@ref man-code-warntype) section in the Performance Ti
 See also: [`@code_warntype`](@ref), [`code_typed`](@ref), [`code_lowered`](@ref), [`code_llvm`](@ref), [`code_native`](@ref).
 
 
-==================================================
-Help for codepoint:
+
+codepoint:
 ==================================================
 
 ```
@@ -3150,8 +3149,8 @@ codepoint(c::AbstractChar) -> Integer
 Return the Unicode codepoint (an unsigned integer) corresponding to the character `c` (or throw an exception if `c` does not represent a valid character). For `Char`, this is a `UInt32` value, but `AbstractChar` types that represent only a subset of Unicode may return a different-sized integer (e.g. `UInt8`).
 
 
-==================================================
-Help for codeunit:
+
+codeunit:
 ==================================================
 
 ```
@@ -3187,8 +3186,8 @@ UInt8
 See also [`ncodeunits`](@ref), [`checkbounds`](@ref).
 
 
-==================================================
-Help for codeunits:
+
+codeunits:
 ==================================================
 
 ```
@@ -3211,8 +3210,8 @@ julia> codeunits("Juλia")
 ```
 
 
-==================================================
-Help for collect:
+
+collect:
 ==================================================
 
 ```
@@ -3262,8 +3261,8 @@ julia> collect(x^2 for x in 1:3)
 ```
 
 
-==================================================
-Help for complex:
+
+complex:
 ==================================================
 
 ```
@@ -3305,8 +3304,8 @@ Union{Missing, Complex{Int64}}
 ```
 
 
-==================================================
-Help for conj:
+
+conj:
 ==================================================
 
 ```
@@ -3347,8 +3346,8 @@ julia> conj(fill(2 - im))
 ```
 
 
-==================================================
-Help for conj!:
+
+conj!:
 ==================================================
 
 ```
@@ -3376,8 +3375,8 @@ julia> A
 ```
 
 
-==================================================
-Help for contains:
+
+contains:
 ==================================================
 
 ```
@@ -3417,8 +3416,8 @@ Create a function that checks whether its argument contains `needle`, i.e. a fun
 The returned function is of type `Base.Fix2{typeof(contains)}`, which can be used to implement specialized methods.
 
 
-==================================================
-Help for contractuser:
+
+contractuser:
 ==================================================
 
 ```
@@ -3430,8 +3429,8 @@ On Unix systems, if the path starts with `homedir()`, replace it with a tilde ch
 See also: [`expanduser`](@ref).
 
 
-==================================================
-Help for convert:
+
+convert:
 ==================================================
 
 ```
@@ -3481,8 +3480,8 @@ true
 See also: [`round`](@ref), [`trunc`](@ref), [`oftype`](@ref), [`reinterpret`](@ref).
 
 
-==================================================
-Help for copy:
+
+copy:
 ==================================================
 
 ```
@@ -3522,8 +3521,8 @@ julia> copy(T)
 ```
 
 
-==================================================
-Help for copy!:
+
+copy!:
 ==================================================
 
 ```
@@ -3543,8 +3542,8 @@ See also [`copyto!`](@ref).
 
 
 
-==================================================
-Help for copyline:
+
+copyline:
 ==================================================
 
 ```
@@ -3575,8 +3574,8 @@ julia> rm("my_file.txt")
 ```
 
 
-==================================================
-Help for copysign:
+
+copysign:
 ==================================================
 
 ```
@@ -3596,8 +3595,8 @@ julia> copysign(-1, 2)
 ```
 
 
-==================================================
-Help for copyto!:
+
+copyto!:
 ==================================================
 
 ```
@@ -3693,8 +3692,8 @@ Copies a [`UniformScaling`](@ref) onto a matrix.
 
 
 
-==================================================
-Help for copyuntil:
+
+copyuntil:
 ==================================================
 
 ```
@@ -3721,8 +3720,8 @@ julia> rm("my_file.txt")
 ```
 
 
-==================================================
-Help for cos:
+
+cos:
 ==================================================
 
 ```
@@ -3751,8 +3750,8 @@ julia> cos(fill(1.0, (2,2)))
 ```
 
 
-==================================================
-Help for cosc:
+
+cosc:
 ==================================================
 
 ```
@@ -3764,8 +3763,8 @@ Compute $\cos(\pi x) / x - \sin(\pi x) / (\pi x^2)$ if $x \neq 0$, and $0$ if $x
 See also [`sinc`](@ref).
 
 
-==================================================
-Help for cosd:
+
+cosd:
 ==================================================
 
 ```
@@ -3779,8 +3778,8 @@ Compute cosine of `x`, where `x` is in degrees. If `x` is a matrix, `x` needs to
 
 
 
-==================================================
-Help for cosh:
+
+cosh:
 ==================================================
 
 ```
@@ -3796,8 +3795,8 @@ cosh(A::AbstractMatrix)
 Compute the matrix hyperbolic cosine of a square matrix `A`.
 
 
-==================================================
-Help for cospi:
+
+cospi:
 ==================================================
 
 ```
@@ -3807,8 +3806,8 @@ cospi(x)
 Compute $\cos(\pi x)$ more accurately than `cos(pi*x)`, especially for large `x`.
 
 
-==================================================
-Help for cot:
+
+cot:
 ==================================================
 
 ```
@@ -3824,8 +3823,8 @@ cot(A::AbstractMatrix)
 Compute the matrix cotangent of a square matrix `A`.
 
 
-==================================================
-Help for cotd:
+
+cotd:
 ==================================================
 
 ```
@@ -3835,8 +3834,8 @@ cotd(x)
 Compute the cotangent of `x`, where `x` is in degrees.
 
 
-==================================================
-Help for coth:
+
+coth:
 ==================================================
 
 ```
@@ -3852,8 +3851,8 @@ coth(A::AbstractMatrix)
 Compute the matrix hyperbolic cotangent of square matrix `A`.
 
 
-==================================================
-Help for count:
+
+count:
 ==================================================
 
 ```
@@ -3947,8 +3946,8 @@ julia> count(<=(2), A, dims=2)
 ```
 
 
-==================================================
-Help for count!:
+
+count!:
 ==================================================
 
 ```
@@ -3984,8 +3983,8 @@ julia> count!(<=(2), [1; 1], A)
 ```
 
 
-==================================================
-Help for count_ones:
+
+count_ones:
 ==================================================
 
 ```
@@ -4005,8 +4004,8 @@ julia> count_ones(Int32(-1))
 ```
 
 
-==================================================
-Help for count_zeros:
+
+count_zeros:
 ==================================================
 
 ```
@@ -4026,8 +4025,8 @@ julia> count_zeros(-1)
 ```
 
 
-==================================================
-Help for countlines:
+
+countlines:
 ==================================================
 
 ```
@@ -4076,8 +4075,8 @@ julia> rm("my_file.txt")
 ```
 
 
-==================================================
-Help for cp:
+
+cp:
 ==================================================
 
 ```
@@ -4093,8 +4092,8 @@ If `follow_symlinks=false`, and `src` is a symbolic link, `dst` will be created 
 
 
 
-==================================================
-Help for csc:
+
+csc:
 ==================================================
 
 ```
@@ -4110,8 +4109,8 @@ csc(A::AbstractMatrix)
 Compute the matrix cosecant of a square matrix `A`.
 
 
-==================================================
-Help for cscd:
+
+cscd:
 ==================================================
 
 ```
@@ -4121,8 +4120,8 @@ cscd(x)
 Compute the cosecant of `x`, where `x` is in degrees.
 
 
-==================================================
-Help for csch:
+
+csch:
 ==================================================
 
 ```
@@ -4138,8 +4137,8 @@ csch(A::AbstractMatrix)
 Compute the matrix hyperbolic cosecant of square matrix `A`.
 
 
-==================================================
-Help for ctime:
+
+ctime:
 ==================================================
 
 ```
@@ -4149,8 +4148,8 @@ ctime(file)
 Equivalent to `stat(file).ctime`.
 
 
-==================================================
-Help for cumprod:
+
+cumprod:
 ==================================================
 
 ```
@@ -4209,8 +4208,8 @@ julia> cumprod("julia")
 ```
 
 
-==================================================
-Help for cumprod!:
+
+cumprod!:
 ==================================================
 
 ```
@@ -4234,8 +4233,8 @@ Cumulative product of a vector `x`, storing the result in `y`. See also [`cumpro
 
 
 
-==================================================
-Help for cumsum:
+
+cumsum:
 ==================================================
 
 ```
@@ -4313,8 +4312,8 @@ julia> cumsum(fill(1, 2) for i in 1:3)
 ```
 
 
-==================================================
-Help for cumsum!:
+
+cumsum!:
 ==================================================
 
 ```
@@ -4328,8 +4327,8 @@ Cumulative sum of `A` along the dimension `dims`, storing the result in `B`. See
 
 
 
-==================================================
-Help for current_exceptions:
+
+current_exceptions:
 ==================================================
 
 ```
@@ -4345,8 +4344,8 @@ Explicitly passing `task` will return the current exception stack on an arbitrar
 
 
 
-==================================================
-Help for current_task:
+
+current_task:
 ==================================================
 
 ```
@@ -4356,8 +4355,8 @@ current_task()
 Get the currently running [`Task`](@ref).
 
 
-==================================================
-Help for deepcopy:
+
+deepcopy:
 ==================================================
 
 ```
@@ -4369,8 +4368,8 @@ Create a deep copy of `x`: everything is copied recursively, resulting in a full
 While it isn't normally necessary, user-defined types can override the default `deepcopy` behavior by defining a specialized version of the function `deepcopy_internal(x::T, dict::IdDict)` (which shouldn't otherwise be used), where `T` is the type to be specialized for, and `dict` keeps track of objects copied so far within the recursion. Within the definition, `deepcopy_internal` should be used in place of `deepcopy`, and the `dict` variable should be updated as appropriate before returning.
 
 
-==================================================
-Help for deg2rad:
+
+deg2rad:
 ==================================================
 
 ```
@@ -4389,8 +4388,8 @@ julia> deg2rad(90)
 ```
 
 
-==================================================
-Help for delete!:
+
+delete!:
 ==================================================
 
 ```
@@ -4417,8 +4416,8 @@ Dict{String, Int64} with 1 entry:
 ```
 
 
-==================================================
-Help for deleteat!:
+
+deleteat!:
 ==================================================
 
 ```
@@ -4471,8 +4470,8 @@ Stacktrace:
 ```
 
 
-==================================================
-Help for denominator:
+
+denominator:
 ==================================================
 
 ```
@@ -4492,8 +4491,8 @@ julia> denominator(4)
 ```
 
 
-==================================================
-Help for detach:
+
+detach:
 ==================================================
 
 ```
@@ -4503,8 +4502,8 @@ detach(command)
 Mark a command object so that it will be run in a new process group, allowing it to outlive the julia process, and not have Ctrl-C interrupts passed to it.
 
 
-==================================================
-Help for devnull:
+
+devnull:
 ==================================================
 
 No documentation found for private symbol.
@@ -4522,8 +4521,8 @@ Base.DevNull <: IO <: Any
 ```
 
 
-==================================================
-Help for diff:
+
+diff:
 ==================================================
 
 ```
@@ -4558,8 +4557,8 @@ julia> diff(vec(a))
 ```
 
 
-==================================================
-Help for digits:
+
+digits:
 ==================================================
 
 ```
@@ -4600,8 +4599,8 @@ true
 ```
 
 
-==================================================
-Help for digits!:
+
+digits!:
 ==================================================
 
 ```
@@ -4631,8 +4630,8 @@ julia> digits!([2, 2, 2, 2, 2, 2], 10, base = 2)
 ```
 
 
-==================================================
-Help for dirname:
+
+dirname:
 ==================================================
 
 ```
@@ -4654,8 +4653,8 @@ julia> dirname("/home/myuser/")
 See also [`basename`](@ref).
 
 
-==================================================
-Help for disable_sigint:
+
+disable_sigint:
 ==================================================
 
 ```
@@ -4674,8 +4673,8 @@ end
 This is not needed on worker threads (`Threads.threadid() != 1`) since the `InterruptException` will only be delivered to the master thread. External functions that do not call julia code or julia runtime automatically disable sigint during their execution.
 
 
-==================================================
-Help for diskstat:
+
+diskstat:
 ==================================================
 
 ```
@@ -4689,8 +4688,8 @@ Returns statistics in bytes about the disk that contains the file or directory p
 
 
 
-==================================================
-Help for display:
+
+display:
 ==================================================
 
 ```
@@ -4709,8 +4708,8 @@ There are also two variants with a `mime` argument (a MIME type string, such as 
 To customize how instances of a type are displayed, overload [`show`](@ref) rather than `display`, as explained in the manual section on [custom pretty-printing](@ref man-custom-pretty-printing).
 
 
-==================================================
-Help for displayable:
+
+displayable:
 ==================================================
 
 ```
@@ -4721,8 +4720,8 @@ displayable(d::AbstractDisplay, mime) -> Bool
 Return a boolean value indicating whether the given `mime` type (string) is displayable by any of the displays in the current display stack, or specifically by the display `d` in the second variant.
 
 
-==================================================
-Help for displaysize:
+
+displaysize:
 ==================================================
 
 ```
@@ -4748,8 +4747,8 @@ julia> displaysize(stdout)
 ```
 
 
-==================================================
-Help for div:
+
+div:
 ==================================================
 
 ```
@@ -4826,8 +4825,8 @@ julia> div(-4, 3, RoundFromZero)
 ```
 
 
-==================================================
-Help for divrem:
+
+divrem:
 ==================================================
 
 ```
@@ -4849,8 +4848,8 @@ julia> divrem(7, 3)
 ```
 
 
-==================================================
-Help for download:
+
+download:
 ==================================================
 
 ```
@@ -4864,8 +4863,8 @@ Download a file from the given url, saving it to the location `path`, or if not 
 
 
 
-==================================================
-Help for dropdims:
+
+dropdims:
 ==================================================
 
 ```
@@ -4901,8 +4900,8 @@ julia> b[1,1,1] = 5; a
 ```
 
 
-==================================================
-Help for dump:
+
+dump:
 ==================================================
 
 ```
@@ -4935,8 +4934,8 @@ MyStruct
 ```
 
 
-==================================================
-Help for eachcol:
+
+eachcol:
 ==================================================
 
 ```
@@ -4977,8 +4976,8 @@ julia> s[1]
 ```
 
 
-==================================================
-Help for eachindex:
+
+eachindex:
 ==================================================
 
 ```
@@ -5017,8 +5016,8 @@ CartesianIndex(2, 1)
 ```
 
 
-==================================================
-Help for eachline:
+
+eachline:
 ==================================================
 
 ```
@@ -5050,8 +5049,8 @@ julia> rm("my_file.txt");
 
 
 
-==================================================
-Help for eachmatch:
+
+eachmatch:
 ==================================================
 
 ```
@@ -5082,8 +5081,8 @@ julia> collect(eachmatch(rx, "a1a2a3a", overlap = true))
 ```
 
 
-==================================================
-Help for eachrow:
+
+eachrow:
 ==================================================
 
 ```
@@ -5124,8 +5123,8 @@ julia> s[1]
 ```
 
 
-==================================================
-Help for eachrsplit:
+
+eachrsplit:
 ==================================================
 
 ```
@@ -5163,8 +5162,8 @@ true
 ```
 
 
-==================================================
-Help for eachslice:
+
+eachslice:
 ==================================================
 
 ```
@@ -5216,8 +5215,8 @@ julia> eachslice(m, dims=1, drop=false)
 ```
 
 
-==================================================
-Help for eachsplit:
+
+eachsplit:
 ==================================================
 
 ```
@@ -5256,8 +5255,8 @@ julia> collect(b)
 ```
 
 
-==================================================
-Help for edit:
+
+edit:
 ==================================================
 
 ```
@@ -5286,8 +5285,8 @@ Edit the definition of a function, optionally specifying a tuple of types to ind
 To ensure that the file can be opened at the given line, you may need to call `InteractiveUtils.define_editor` first.
 
 
-==================================================
-Help for eltype:
+
+eltype:
 ==================================================
 
 ```
@@ -5309,8 +5308,8 @@ UInt8
 ```
 
 
-==================================================
-Help for empty:
+
+empty:
 ==================================================
 
 ```
@@ -5346,8 +5345,8 @@ Create an empty `AbstractDict` container which can accept indices of type `index
 Custom `AbstractDict` subtypes may choose which specific dictionary type is best suited to return for the given index and value types, by specializing on the three-argument signature. The default is to return an empty `Dict`.
 
 
-==================================================
-Help for empty!:
+
+empty!:
 ==================================================
 
 ```
@@ -5377,8 +5376,8 @@ empty!(c::Channel)
 Empty a Channel `c` by calling `empty!` on the internal buffer. Return the empty channel.
 
 
-==================================================
-Help for endswith:
+
+endswith:
 ==================================================
 
 ```
@@ -5442,8 +5441,8 @@ true
 ```
 
 
-==================================================
-Help for enumerate:
+
+enumerate:
 ==================================================
 
 ```
@@ -5480,8 +5479,8 @@ i = 5, val = e, str[i] = 'v'
 ```
 
 
-==================================================
-Help for eof:
+
+eof:
 ==================================================
 
 ```
@@ -5511,8 +5510,8 @@ eof(l::Lexer)
 Determine whether the end of the lexer's underlying buffer has been reached.
 
 
-==================================================
-Help for eps:
+
+eps:
 ==================================================
 
 ```
@@ -5603,8 +5602,8 @@ julia> eps(Time)
 ```
 
 
-==================================================
-Help for err:
+
+err:
 ==================================================
 
 No documentation found for private symbol.
@@ -5628,8 +5627,8 @@ Base.ExceptionStack <: AbstractVector{Any} <: Any
 ```
 
 
-==================================================
-Help for error:
+
+error:
 ==================================================
 
 ```
@@ -5645,8 +5644,8 @@ error(msg...)
 Raise an `ErrorException` with a message constructed by `string(msg...)`.
 
 
-==================================================
-Help for errormonitor:
+
+errormonitor:
 ==================================================
 
 ```
@@ -5665,8 +5664,8 @@ Stacktrace:
 ```
 
 
-==================================================
-Help for esc:
+
+esc:
 ==================================================
 
 ```
@@ -5676,8 +5675,8 @@ esc(e)
 Only valid in the context of an [`Expr`](@ref) returned from a macro. Prevents the macro hygiene pass from turning embedded variables into gensym variables. See the [Macros](@ref man-macros) section of the Metaprogramming chapter of the manual for more details and examples.
 
 
-==================================================
-Help for escape_string:
+
+escape_string:
 ==================================================
 
 ```
@@ -5719,8 +5718,8 @@ julia> escape_string(string('\u2135','\0','0')) # \0 would be ambiguous
 ```
 
 
-==================================================
-Help for eval:
+
+eval:
 ==================================================
 
 ```
@@ -5730,8 +5729,8 @@ eval(expr)
 Evaluate an expression in the global scope of the containing module. Every `Module` (except those defined with `baremodule`) has its own 1-argument definition of `eval`, which evaluates expressions in that module.
 
 
-==================================================
-Help for evalfile:
+
+evalfile:
 ==================================================
 
 ```
@@ -5758,8 +5757,8 @@ julia> rm("testfile.jl")
 ```
 
 
-==================================================
-Help for evalpoly:
+
+evalpoly:
 ==================================================
 
 ```
@@ -5782,8 +5781,8 @@ julia> evalpoly(2, (1, 2, 3))
 ```
 
 
-==================================================
-Help for exit:
+
+exit:
 ==================================================
 
 ```
@@ -5793,8 +5792,8 @@ exit(code=0)
 Stop the program with an exit code. The default exit code is zero, indicating that the program completed successfully. In an interactive session, `exit()` can be called with the keyboard shortcut `^D`.
 
 
-==================================================
-Help for exp:
+
+exp:
 ==================================================
 
 ```
@@ -5844,8 +5843,8 @@ julia> exp(A)
 ```
 
 
-==================================================
-Help for exp10:
+
+exp10:
 ==================================================
 
 ```
@@ -5865,8 +5864,8 @@ julia> 10^2
 ```
 
 
-==================================================
-Help for exp2:
+
+exp2:
 ==================================================
 
 ```
@@ -5891,8 +5890,8 @@ true
 ```
 
 
-==================================================
-Help for expanduser:
+
+expanduser:
 ==================================================
 
 ```
@@ -5904,8 +5903,8 @@ On Unix systems, replace a tilde character at the start of a path with the curre
 See also: [`contractuser`](@ref).
 
 
-==================================================
-Help for expm1:
+
+expm1:
 ==================================================
 
 ```
@@ -5925,8 +5924,8 @@ julia> exp(1e-16) - 1
 ```
 
 
-==================================================
-Help for exponent:
+
+exponent:
 ==================================================
 
 ```
@@ -5964,8 +5963,8 @@ Cannot be ±0.0.
 ```
 
 
-==================================================
-Help for extrema:
+
+extrema:
 ==================================================
 
 ```
@@ -6060,8 +6059,8 @@ Compute the minimum and maximum of `f` applied to each element in the given dime
 
 
 
-==================================================
-Help for extrema!:
+
+extrema!:
 ==================================================
 
 ```
@@ -6097,8 +6096,8 @@ julia> extrema!([(1, 1);; (1, 1)], A)
 ```
 
 
-==================================================
-Help for factorial:
+
+factorial:
 ==================================================
 
 ```
@@ -6129,8 +6128,8 @@ julia> factorial(big(21))
   * [Factorial](https://en.wikipedia.org/wiki/Factorial) on Wikipedia.
 
 
-==================================================
-Help for falses:
+
+falses:
 ==================================================
 
 ```
@@ -6149,8 +6148,8 @@ julia> falses(2,3)
 ```
 
 
-==================================================
-Help for fd:
+
+fd:
 ==================================================
 
 ```
@@ -6160,8 +6159,8 @@ fd(stream)
 Return the file descriptor backing the stream or file. Note that this function only applies to synchronous `File`'s and `IOStream`'s not to any of the asynchronous streams.
 
 
-==================================================
-Help for fdio:
+
+fdio:
 ==================================================
 
 ```
@@ -6171,8 +6170,8 @@ fdio([name::AbstractString, ]fd::Integer[, own::Bool=false]) -> IOStream
 Create an [`IOStream`](@ref) object from an integer file descriptor. If `own` is `true`, closing this object will close the underlying descriptor. By default, an `IOStream` is closed when it is garbage collected. `name` allows you to associate the descriptor with a named file.
 
 
-==================================================
-Help for fetch:
+
+fetch:
 ==================================================
 
 ```
@@ -6213,8 +6212,8 @@ fetch(t::Task)
 Wait for a [`Task`](@ref) to finish, then return its result value. If the task fails with an exception, a [`TaskFailedException`](@ref) (which wraps the failed task) is thrown.
 
 
-==================================================
-Help for fieldcount:
+
+fieldcount:
 ==================================================
 
 ```
@@ -6224,8 +6223,8 @@ fieldcount(t::Type)
 Get the number of fields that an instance of the given type would have. An error is thrown if the type is too abstract to determine this.
 
 
-==================================================
-Help for fieldname:
+
+fieldname:
 ==================================================
 
 ```
@@ -6245,8 +6244,8 @@ julia> fieldname(Rational, 2)
 ```
 
 
-==================================================
-Help for fieldnames:
+
+fieldnames:
 ==================================================
 
 ```
@@ -6268,8 +6267,8 @@ julia> fieldnames(typeof(1+im))
 ```
 
 
-==================================================
-Help for fieldoffset:
+
+fieldoffset:
 ==================================================
 
 ```
@@ -6299,8 +6298,8 @@ julia> structinfo(Base.Filesystem.StatStruct)
 ```
 
 
-==================================================
-Help for fieldtype:
+
+fieldtype:
 ==================================================
 
 ```
@@ -6325,8 +6324,8 @@ String
 ```
 
 
-==================================================
-Help for fieldtypes:
+
+fieldtypes:
 ==================================================
 
 ```
@@ -6352,8 +6351,8 @@ julia> fieldtypes(Foo)
 ```
 
 
-==================================================
-Help for filemode:
+
+filemode:
 ==================================================
 
 ```
@@ -6363,8 +6362,8 @@ filemode(file)
 Equivalent to `stat(file).mode`.
 
 
-==================================================
-Help for filesize:
+
+filesize:
 ==================================================
 
 ```
@@ -6374,8 +6373,8 @@ filesize(path...)
 Equivalent to `stat(file).size`.
 
 
-==================================================
-Help for fill:
+
+fill:
 ==================================================
 
 ```
@@ -6466,8 +6465,8 @@ julia> A # both A[1] and A[2] are the very same vector
 ```
 
 
-==================================================
-Help for fill!:
+
+fill!:
 ==================================================
 
 ```
@@ -6503,8 +6502,8 @@ julia> x = 0; f() = (global x += 1; x); fill!(Vector{Int}(undef, 3), f())
 ```
 
 
-==================================================
-Help for filter:
+
+filter:
 ==================================================
 
 ```
@@ -6602,8 +6601,8 @@ julia> filter(isodd, skipmissing(x))
 ```
 
 
-==================================================
-Help for filter!:
+
+filter!:
 ==================================================
 
 ```
@@ -6646,8 +6645,8 @@ Dict{Int64, String} with 2 entries:
 ```
 
 
-==================================================
-Help for finalize:
+
+finalize:
 ==================================================
 
 ```
@@ -6657,8 +6656,8 @@ finalize(x)
 Immediately run finalizers registered for object `x`.
 
 
-==================================================
-Help for finalizer:
+
+finalizer:
 ==================================================
 
 ```
@@ -6697,8 +6696,8 @@ end
 ```
 
 
-==================================================
-Help for findall:
+
+findall:
 ==================================================
 
 ```
@@ -6811,8 +6810,8 @@ julia> findall('a', "batman")
 
 
 
-==================================================
-Help for findfirst:
+
+findfirst:
 ==================================================
 
 ```
@@ -6939,8 +6938,8 @@ julia> findfirst([0x52, 0x62], [0x40, 0x52, 0x62, 0x63])
 ```
 
 
-==================================================
-Help for findlast:
+
+findlast:
 ==================================================
 
 ```
@@ -7062,8 +7061,8 @@ true
 ```
 
 
-==================================================
-Help for findmax:
+
+findmax:
 ==================================================
 
 ```
@@ -7162,8 +7161,8 @@ julia> findmax(abs2, A, dims=2)
 ```
 
 
-==================================================
-Help for findmax!:
+
+findmax!:
 ==================================================
 
 ```
@@ -7177,8 +7176,8 @@ Find the maximum of `A` and the corresponding linear index along singleton dimen
 
 
 
-==================================================
-Help for findmin:
+
+findmin:
 ==================================================
 
 ```
@@ -7279,8 +7278,8 @@ julia> findmin(abs2, A, dims=2)
 ```
 
 
-==================================================
-Help for findmin!:
+
+findmin!:
 ==================================================
 
 ```
@@ -7294,8 +7293,8 @@ Find the minimum of `A` and the corresponding linear index along singleton dimen
 
 
 
-==================================================
-Help for findnext:
+
+findnext:
 ==================================================
 
 ```
@@ -7424,8 +7423,8 @@ julia> findnext([0x52, 0x62], [0x40, 0x52, 0x62, 0x52, 0x62], 3)
 ```
 
 
-==================================================
-Help for findprev:
+
+findprev:
 ==================================================
 
 ```
@@ -7560,8 +7559,8 @@ julia> findprev([0x52, 0x62], [0x40, 0x52, 0x62, 0x52, 0x62], 3)
 ```
 
 
-==================================================
-Help for first:
+
+first:
 ==================================================
 
 ```
@@ -7629,8 +7628,8 @@ julia> first("∀ϵ≠0: ϵ²>0", 3)
 ```
 
 
-==================================================
-Help for firstindex:
+
+firstindex:
 ==================================================
 
 ```
@@ -7655,8 +7654,8 @@ julia> firstindex(rand(3,4,5), 2)
 ```
 
 
-==================================================
-Help for fld:
+
+fld:
 ==================================================
 
 ```
@@ -7692,8 +7691,8 @@ julia> 6.0 / big(0.1)
 What is happening here is that the true value of the floating-point number written as `0.1` is slightly larger than the numerical value 1/10 while `6.0` represents the number 6 precisely. Therefore the true value of `6.0 / 0.1` is slightly less than 60. When doing division, this is rounded to precisely `60.0`, but `fld(6.0, 0.1)` always takes the floor of the true value, so the result is `59.0`.
 
 
-==================================================
-Help for fld1:
+
+fld1:
 ==================================================
 
 ```
@@ -7720,8 +7719,8 @@ true
 ```
 
 
-==================================================
-Help for fldmod:
+
+fldmod:
 ==================================================
 
 ```
@@ -7733,8 +7732,8 @@ The floored quotient and modulus after division. A convenience wrapper for `divr
 See also: [`fld`](@ref), [`cld`](@ref), [`fldmod1`](@ref).
 
 
-==================================================
-Help for fldmod1:
+
+fldmod1:
 ==================================================
 
 ```
@@ -7746,8 +7745,8 @@ Return `(fld1(x,y), mod1(x,y))`.
 See also [`fld1`](@ref), [`mod1`](@ref).
 
 
-==================================================
-Help for flipsign:
+
+flipsign:
 ==================================================
 
 ```
@@ -7767,8 +7766,8 @@ julia> flipsign(5, -3)
 ```
 
 
-==================================================
-Help for float:
+
+float:
 ==================================================
 
 ```
@@ -7806,8 +7805,8 @@ Float64
 ```
 
 
-==================================================
-Help for floatmax:
+
+floatmax:
 ==================================================
 
 ```
@@ -7835,8 +7834,8 @@ Inf
 ```
 
 
-==================================================
-Help for floatmin:
+
+floatmin:
 ==================================================
 
 ```
@@ -7859,8 +7858,8 @@ julia> floatmin()
 ```
 
 
-==================================================
-Help for floor:
+
+floor:
 ==================================================
 
 ```
@@ -7918,8 +7917,8 @@ julia> floor(DateTime(2016, 8, 6, 12, 0, 0), Day)
 ```
 
 
-==================================================
-Help for flush:
+
+flush:
 ==================================================
 
 ```
@@ -7929,8 +7928,8 @@ flush(stream)
 Commit all currently buffered writes to the given stream.
 
 
-==================================================
-Help for fma:
+
+fma:
 ==================================================
 
 ```
@@ -7940,8 +7939,8 @@ fma(x, y, z)
 Computes `x*y+z` without rounding the intermediate result `x*y`. On some systems this is significantly more expensive than `x*y+z`. `fma` is used to improve accuracy in certain algorithms. See [`muladd`](@ref).
 
 
-==================================================
-Help for foldl:
+
+foldl:
 ==================================================
 
 ```
@@ -7966,8 +7965,8 @@ julia> accumulate(=>, (1,2,3,4))
 ```
 
 
-==================================================
-Help for foldr:
+
+foldr:
 ==================================================
 
 ```
@@ -7987,8 +7986,8 @@ julia> foldr(=>, 1:4; init=0)
 ```
 
 
-==================================================
-Help for foreach:
+
+foreach:
 ==================================================
 
 ```
@@ -8019,8 +8018,8 @@ julia> foreach((x, y) -> println(x, " with ", y), tri, 'a':'z')
 ```
 
 
-==================================================
-Help for fourthroot:
+
+fourthroot:
 ==================================================
 
 ```
@@ -8030,8 +8029,8 @@ fourthroot(x)
 Return the fourth root of `x` by applying `sqrt` twice successively.
 
 
-==================================================
-Help for frexp:
+
+frexp:
 ==================================================
 
 ```
@@ -8056,8 +8055,8 @@ julia> frexp(0.0), frexp(NaN), frexp(-Inf)  # exponent would give an error
 ```
 
 
-==================================================
-Help for fullname:
+
+fullname:
 ==================================================
 
 ```
@@ -8077,8 +8076,8 @@ julia> fullname(Main)
 ```
 
 
-==================================================
-Help for functionloc:
+
+functionloc:
 ==================================================
 
 ```
@@ -8094,8 +8093,8 @@ functionloc(f::Function, types)
 Return a tuple `(filename,line)` giving the location of a generic `Function` definition.
 
 
-==================================================
-Help for gcd:
+
+gcd:
 ==================================================
 
 ```
@@ -8137,8 +8136,8 @@ julia> gcd(0, 0, 10, 15)
 ```
 
 
-==================================================
-Help for gcdx:
+
+gcdx:
 ==================================================
 
 ```
@@ -8168,8 +8167,8 @@ julia> gcdx(240, 46)
 
 
 
-==================================================
-Help for gensym:
+
+gensym:
 ==================================================
 
 ```
@@ -8179,8 +8178,8 @@ gensym([tag])
 Generates a symbol which will not conflict with other variable names (in the same module).
 
 
-==================================================
-Help for get:
+
+get:
 ==================================================
 
 ```
@@ -8221,8 +8220,8 @@ end
 ```
 
 
-==================================================
-Help for get!:
+
+get!:
 ==================================================
 
 ```
@@ -8279,8 +8278,8 @@ Dict{Int64, Int64} with 1 entry:
 ```
 
 
-==================================================
-Help for get_zero_subnormals:
+
+get_zero_subnormals:
 ==================================================
 
 ```
@@ -8294,8 +8293,8 @@ Return `false` if operations on subnormal floating-point values ("denormals") ob
 
 
 
-==================================================
-Help for getfield:
+
+getfield:
 ==================================================
 
 ```
@@ -8322,8 +8321,8 @@ julia> getfield(a, 1)
 ```
 
 
-==================================================
-Help for getglobal:
+
+getglobal:
 ==================================================
 
 ```
@@ -8360,8 +8359,8 @@ julia> getglobal(M, :a)
 ```
 
 
-==================================================
-Help for gethostname:
+
+gethostname:
 ==================================================
 
 ```
@@ -8371,8 +8370,8 @@ gethostname() -> String
 Get the local machine's host name.
 
 
-==================================================
-Help for getindex:
+
+getindex:
 ==================================================
 
 ```
@@ -8489,8 +8488,8 @@ runtests = subtree["runtests.jl"]
 ```
 
 
-==================================================
-Help for getkey:
+
+getkey:
 ==================================================
 
 ```
@@ -8515,8 +8514,8 @@ julia> getkey(D, 'd', 'a')
 ```
 
 
-==================================================
-Help for getpid:
+
+getpid:
 ==================================================
 
 ```
@@ -8536,8 +8535,8 @@ getpid() -> Int32
 Get Julia's process ID.
 
 
-==================================================
-Help for getproperty:
+
+getproperty:
 ==================================================
 
 ```
@@ -8576,8 +8575,8 @@ One should overload `getproperty` only when necessary, as it can be confusing if
 See also [`getfield`](@ref Core.getfield), [`propertynames`](@ref Base.propertynames) and [`setproperty!`](@ref Base.setproperty!).
 
 
-==================================================
-Help for gperm:
+
+gperm:
 ==================================================
 
 ```
@@ -8587,8 +8586,8 @@ gperm(file)
 Like [`uperm`](@ref) but gets the permissions of the group owning the file.
 
 
-==================================================
-Help for hardlink:
+
+hardlink:
 ==================================================
 
 ```
@@ -8604,8 +8603,8 @@ See also: [`symlink`](@ref).
 
 
 
-==================================================
-Help for hasfield:
+
+hasfield:
 ==================================================
 
 ```
@@ -8635,8 +8634,8 @@ false
 ```
 
 
-==================================================
-Help for hash:
+
+hash:
 ==================================================
 
 ```
@@ -8660,8 +8659,8 @@ julia> hash(10, a) # only use the output of another hash function as the second 
 See also: [`objectid`](@ref), [`Dict`](@ref), [`Set`](@ref).
 
 
-==================================================
-Help for haskey:
+
+haskey:
 ==================================================
 
 ```
@@ -8686,8 +8685,8 @@ false
 ```
 
 
-==================================================
-Help for hasmethod:
+
+hasmethod:
 ==================================================
 
 ```
@@ -8725,8 +8724,8 @@ true
 ```
 
 
-==================================================
-Help for hasproperty:
+
+hasproperty:
 ==================================================
 
 ```
@@ -8742,8 +8741,8 @@ Return a boolean indicating whether the object `x` has `s` as one of its own pro
 See also: [`propertynames`](@ref), [`hasfield`](@ref).
 
 
-==================================================
-Help for hcat:
+
+hcat:
 ==================================================
 
 ```
@@ -8795,8 +8794,8 @@ julia> hcat([1.1, 9.9], Matrix(undef, 2, 0))  # hcat with empty 2×0 Matrix
 ```
 
 
-==================================================
-Help for hex2bytes:
+
+hex2bytes:
 ==================================================
 
 ```
@@ -8839,8 +8838,8 @@ julia> hex2bytes(a)
 ```
 
 
-==================================================
-Help for hex2bytes!:
+
+hex2bytes!:
 ==================================================
 
 ```
@@ -8854,8 +8853,8 @@ Convert an iterable `itr` of bytes representing a hexadecimal string to its bina
 
 
 
-==================================================
-Help for homedir:
+
+homedir:
 ==================================================
 
 ```
@@ -8871,8 +8870,8 @@ Return the current user's home directory.
 See also [`Sys.username`](@ref).
 
 
-==================================================
-Help for htol:
+
+htol:
 ==================================================
 
 ```
@@ -8882,8 +8881,8 @@ htol(x)
 Convert the endianness of a value from that used by the Host to Little-endian.
 
 
-==================================================
-Help for hton:
+
+hton:
 ==================================================
 
 ```
@@ -8893,8 +8892,8 @@ hton(x)
 Convert the endianness of a value from that used by the Host to Network byte order (big-endian).
 
 
-==================================================
-Help for hvcat:
+
+hvcat:
 ==================================================
 
 ```
@@ -8935,8 +8934,8 @@ true
 ```
 
 
-==================================================
-Help for hvncat:
+
+hvncat:
 ==================================================
 
 ```
@@ -9019,8 +9018,8 @@ julia> hvncat(((3, 3), (3, 3), (6,)), true, a, b, c, d, e, f)
 ```
 
 
-==================================================
-Help for hypot:
+
+hypot:
 ==================================================
 
 ```
@@ -9069,8 +9068,8 @@ true
 ```
 
 
-==================================================
-Help for identity:
+
+identity:
 ==================================================
 
 ```
@@ -9089,8 +9088,8 @@ julia> identity("Well, what did you expect?")
 ```
 
 
-==================================================
-Help for ifelse:
+
+ifelse:
 ==================================================
 
 ```
@@ -9107,8 +9106,8 @@ julia> ifelse(1 > 2, 1, 2)
 ```
 
 
-==================================================
-Help for ignorestatus:
+
+ignorestatus:
 ==================================================
 
 ```
@@ -9118,8 +9117,8 @@ ignorestatus(command)
 Mark a command object so that running it will not throw an error if the result code is non-zero.
 
 
-==================================================
-Help for im:
+
+im:
 ==================================================
 
 ```
@@ -9133,8 +9132,8 @@ Complex number type with real and imaginary part of type `T`.
 See also: [`Real`](@ref), [`complex`](@ref), [`real`](@ref).
 
 
-==================================================
-Help for imag:
+
+imag:
 ==================================================
 
 ```
@@ -9175,8 +9174,8 @@ julia> imag(fill(2 - im))
 ```
 
 
-==================================================
-Help for in:
+
+in:
 ==================================================
 
 ```
@@ -9242,8 +9241,8 @@ julia> [1, 2] .∈ ([2, 3],)
 ```
 
 
-==================================================
-Help for in!:
+
+in!:
 ==================================================
 
 ```
@@ -9279,8 +9278,8 @@ Set{Any} with 4 elements:
 ```
 
 
-==================================================
-Help for include:
+
+include:
 ==================================================
 
 ```
@@ -9298,8 +9297,8 @@ Use [`Base.include`](@ref) to evaluate a file into another module.
 
 
 
-==================================================
-Help for include_dependency:
+
+include_dependency:
 ==================================================
 
 ```
@@ -9315,8 +9314,8 @@ This is only needed if your module depends on a path that is not used via [`incl
 
 
 
-==================================================
-Help for include_string:
+
+include_string:
 ==================================================
 
 ```
@@ -9332,8 +9331,8 @@ The optional first argument `mapexpr` can be used to transform the included code
 
 
 
-==================================================
-Help for indexin:
+
+indexin:
 ==================================================
 
 ```
@@ -9368,8 +9367,8 @@ julia> indexin(b, a)
 ```
 
 
-==================================================
-Help for insert!:
+
+insert!:
 ==================================================
 
 ```
@@ -9395,8 +9394,8 @@ julia> insert!(Any[1:6;], 3, "here")
 ```
 
 
-==================================================
-Help for insorted:
+
+insorted:
 ==================================================
 
 ```
@@ -9436,8 +9435,8 @@ true
 
 
 
-==================================================
-Help for instances:
+
+instances:
 ==================================================
 
 ```
@@ -9456,8 +9455,8 @@ julia> instances(Color)
 ```
 
 
-==================================================
-Help for intersect:
+
+intersect:
 ==================================================
 
 ```
@@ -9502,8 +9501,8 @@ Set{Float64} with 1 element:
 ```
 
 
-==================================================
-Help for intersect!:
+
+intersect!:
 ==================================================
 
 ```
@@ -9517,8 +9516,8 @@ Intersect all passed in sets and overwrite `s` with the result. Maintain order w
 
 
 
-==================================================
-Help for inv:
+
+inv:
 ==================================================
 
 ```
@@ -9573,8 +9572,8 @@ true
 ```
 
 
-==================================================
-Help for invmod:
+
+invmod:
 ==================================================
 
 ```
@@ -9620,8 +9619,8 @@ The modular inverse is computed much more efficiently than the general case usin
 
 
 
-==================================================
-Help for invoke:
+
+invoke:
 ==================================================
 
 ```
@@ -9663,8 +9662,8 @@ Integer
 ```
 
 
-==================================================
-Help for invokelatest:
+
+invokelatest:
 ==================================================
 
 ```
@@ -9678,8 +9677,8 @@ Calls `f(args...; kwargs...)`, but guarantees that the most recent method of `f`
 
 
 
-==================================================
-Help for invperm:
+
+invperm:
 ==================================================
 
 ```
@@ -9725,8 +9724,8 @@ julia> B[invperm(v)]
 ```
 
 
-==================================================
-Help for invpermute!:
+
+invpermute!:
 ==================================================
 
 ```
@@ -9759,8 +9758,8 @@ julia> A
 ```
 
 
-==================================================
-Help for isa:
+
+isa:
 ==================================================
 
 ```
@@ -9789,8 +9788,8 @@ true
 ```
 
 
-==================================================
-Help for isabspath:
+
+isabspath:
 ==================================================
 
 ```
@@ -9810,8 +9809,8 @@ false
 ```
 
 
-==================================================
-Help for isabstracttype:
+
+isabstracttype:
 ==================================================
 
 ```
@@ -9831,8 +9830,8 @@ false
 ```
 
 
-==================================================
-Help for isapprox:
+
+isapprox:
 ==================================================
 
 ```
@@ -9891,8 +9890,8 @@ The keyword arguments supported here are the same as those in the 2-argument `is
 
 
 
-==================================================
-Help for isascii:
+
+isascii:
 ==================================================
 
 ```
@@ -9934,8 +9933,8 @@ isascii(cu::AbstractVector{CU}) where {CU <: Integer} -> Bool
 Test whether all values in the vector belong to the ASCII character set (0x00 to 0x7f). This function is intended to be used by other string implementations that need a fast ASCII check.
 
 
-==================================================
-Help for isassigned:
+
+isassigned:
 ==================================================
 
 ```
@@ -10013,8 +10012,8 @@ false
 ```
 
 
-==================================================
-Help for isbits:
+
+isbits:
 ==================================================
 
 ```
@@ -10024,8 +10023,8 @@ isbits(x)
 Return `true` if `x` is an instance of an [`isbitstype`](@ref) type.
 
 
-==================================================
-Help for isbitstype:
+
+isbitstype:
 ==================================================
 
 ```
@@ -10047,8 +10046,8 @@ false
 ```
 
 
-==================================================
-Help for isblockdev:
+
+isblockdev:
 ==================================================
 
 ```
@@ -10058,8 +10057,8 @@ isblockdev(path) -> Bool
 Return `true` if `path` is a block device, `false` otherwise.
 
 
-==================================================
-Help for ischardev:
+
+ischardev:
 ==================================================
 
 ```
@@ -10069,8 +10068,8 @@ ischardev(path) -> Bool
 Return `true` if `path` is a character device, `false` otherwise.
 
 
-==================================================
-Help for iscntrl:
+
+iscntrl:
 ==================================================
 
 ```
@@ -10090,8 +10089,8 @@ false
 ```
 
 
-==================================================
-Help for isconcretetype:
+
+isconcretetype:
 ==================================================
 
 ```
@@ -10125,8 +10124,8 @@ false
 ```
 
 
-==================================================
-Help for isconst:
+
+isconst:
 ==================================================
 
 ```
@@ -10142,8 +10141,8 @@ isconst(t::DataType, s::Union{Int,Symbol}) -> Bool
 Determine whether a field `s` is declared `const` in a given type `t`.
 
 
-==================================================
-Help for isdefined:
+
+isdefined:
 ==================================================
 
 ```
@@ -10183,8 +10182,8 @@ false
 ```
 
 
-==================================================
-Help for isdigit:
+
+isdigit:
 ==================================================
 
 ```
@@ -10209,8 +10208,8 @@ false
 ```
 
 
-==================================================
-Help for isdir:
+
+isdir:
 ==================================================
 
 ```
@@ -10232,8 +10231,8 @@ false
 See also [`isfile`](@ref) and [`ispath`](@ref).
 
 
-==================================================
-Help for isdirpath:
+
+isdirpath:
 ==================================================
 
 ```
@@ -10253,8 +10252,8 @@ true
 ```
 
 
-==================================================
-Help for isdisjoint:
+
+isdisjoint:
 ==================================================
 
 ```
@@ -10290,8 +10289,8 @@ Create a function that compares its argument to `x` using [`isdisjoint`](@ref), 
 
 
 
-==================================================
-Help for isdispatchtuple:
+
+isdispatchtuple:
 ==================================================
 
 ```
@@ -10301,8 +10300,8 @@ isdispatchtuple(T)
 Determine whether type `T` is a tuple "leaf type", meaning it could appear as a type signature in dispatch and has no subtypes (or supertypes) which could appear in a call. If `T` is not a type, then return `false`.
 
 
-==================================================
-Help for isempty:
+
+isempty:
 ==================================================
 
 ```
@@ -10332,8 +10331,8 @@ isempty(condition)
 Return `true` if no tasks are waiting on the condition, `false` otherwise.
 
 
-==================================================
-Help for isequal:
+
+isequal:
 ==================================================
 
 ```
@@ -10387,8 +10386,8 @@ Create a function that compares its argument to `x` using [`isequal`](@ref), i.e
 The returned function is of type `Base.Fix2{typeof(isequal)}`, which can be used to implement specialized methods.
 
 
-==================================================
-Help for iseven:
+
+iseven:
 ==================================================
 
 ```
@@ -10412,8 +10411,8 @@ true
 ```
 
 
-==================================================
-Help for isexecutable:
+
+isexecutable:
 ==================================================
 
 ```
@@ -10433,8 +10432,8 @@ Return `true` if the given `path` has executable permissions.
 See also [`ispath`](@ref), [`isreadable`](@ref), [`iswritable`](@ref).
 
 
-==================================================
-Help for isfifo:
+
+isfifo:
 ==================================================
 
 ```
@@ -10444,8 +10443,8 @@ isfifo(path) -> Bool
 Return `true` if `path` is a FIFO, `false` otherwise.
 
 
-==================================================
-Help for isfile:
+
+isfile:
 ==================================================
 
 ```
@@ -10476,8 +10475,8 @@ false
 See also [`isdir`](@ref) and [`ispath`](@ref).
 
 
-==================================================
-Help for isfinite:
+
+isfinite:
 ==================================================
 
 ```
@@ -10497,8 +10496,8 @@ false
 ```
 
 
-==================================================
-Help for isimmutable:
+
+isimmutable:
 ==================================================
 
 ```
@@ -10522,8 +10521,8 @@ false
 ```
 
 
-==================================================
-Help for isinf:
+
+isinf:
 ==================================================
 
 ```
@@ -10535,8 +10534,8 @@ Test whether a number is infinite.
 See also: [`Inf`](@ref), [`iszero`](@ref), [`isfinite`](@ref), [`isnan`](@ref).
 
 
-==================================================
-Help for isinteger:
+
+isinteger:
 ==================================================
 
 ```
@@ -10553,8 +10552,8 @@ true
 ```
 
 
-==================================================
-Help for isinteractive:
+
+isinteractive:
 ==================================================
 
 ```
@@ -10564,8 +10563,8 @@ isinteractive() -> Bool
 Determine whether Julia is running an interactive session.
 
 
-==================================================
-Help for isless:
+
+isless:
 ==================================================
 
 ```
@@ -10627,8 +10626,8 @@ false
 ```
 
 
-==================================================
-Help for isletter:
+
+isletter:
 ==================================================
 
 ```
@@ -10653,8 +10652,8 @@ false
 ```
 
 
-==================================================
-Help for islink:
+
+islink:
 ==================================================
 
 ```
@@ -10664,8 +10663,8 @@ islink(path) -> Bool
 Return `true` if `path` is a symbolic link, `false` otherwise.
 
 
-==================================================
-Help for islocked:
+
+islocked:
 ==================================================
 
 ```
@@ -10699,8 +10698,8 @@ A lock implementation is advised to define `islocked` with the following propert
   * If `islocked(lock)` returns `false`, an immediate invocation of `trylock(lock)` must succeed (returns `true`) if there is no interference from other tasks.
 
 
-==================================================
-Help for islowercase:
+
+islowercase:
 ==================================================
 
 ```
@@ -10725,8 +10724,8 @@ false
 ```
 
 
-==================================================
-Help for ismarked:
+
+ismarked:
 ==================================================
 
 ```
@@ -10738,8 +10737,8 @@ Return `true` if stream `s` is marked.
 See also [`mark`](@ref), [`unmark`](@ref), [`reset`](@ref).
 
 
-==================================================
-Help for ismissing:
+
+ismissing:
 ==================================================
 
 ```
@@ -10751,8 +10750,8 @@ Indicate whether `x` is [`missing`](@ref).
 See also: [`skipmissing`](@ref), [`isnothing`](@ref), [`isnan`](@ref).
 
 
-==================================================
-Help for ismount:
+
+ismount:
 ==================================================
 
 ```
@@ -10762,8 +10761,8 @@ ismount(path) -> Bool
 Return `true` if `path` is a mount point, `false` otherwise.
 
 
-==================================================
-Help for ismutable:
+
+ismutable:
 ==================================================
 
 ```
@@ -10793,8 +10792,8 @@ true
 
 
 
-==================================================
-Help for ismutabletype:
+
+ismutabletype:
 ==================================================
 
 ```
@@ -10808,8 +10807,8 @@ Determine whether type `T` was declared as a mutable type (i.e. using `mutable s
 
 
 
-==================================================
-Help for isnan:
+
+isnan:
 ==================================================
 
 ```
@@ -10821,8 +10820,8 @@ Test whether a number value is a NaN, an indeterminate value which is neither an
 See also: [`iszero`](@ref), [`isone`](@ref), [`isinf`](@ref), [`ismissing`](@ref).
 
 
-==================================================
-Help for isnothing:
+
+isnothing:
 ==================================================
 
 ```
@@ -10838,8 +10837,8 @@ Return `true` if `x === nothing`, and return `false` if not.
 See also [`something`](@ref), [`Base.notnothing`](@ref), [`ismissing`](@ref).
 
 
-==================================================
-Help for isnumeric:
+
+isnumeric:
 ==================================================
 
 ```
@@ -10867,8 +10866,8 @@ false
 ```
 
 
-==================================================
-Help for isodd:
+
+isodd:
 ==================================================
 
 ```
@@ -10892,8 +10891,8 @@ false
 ```
 
 
-==================================================
-Help for isone:
+
+isone:
 ==================================================
 
 ```
@@ -10916,8 +10915,8 @@ true
 ```
 
 
-==================================================
-Help for isopen:
+
+isopen:
 ==================================================
 
 ```
@@ -10941,8 +10940,8 @@ false
 ```
 
 
-==================================================
-Help for ispath:
+
+ispath:
 ==================================================
 
 ```
@@ -10952,8 +10951,8 @@ ispath(path) -> Bool
 Return `true` if a valid filesystem entity exists at `path`, otherwise returns `false`. This is the generalization of [`isfile`](@ref), [`isdir`](@ref) etc.
 
 
-==================================================
-Help for isperm:
+
+isperm:
 ==================================================
 
 ```
@@ -10973,8 +10972,8 @@ false
 ```
 
 
-==================================================
-Help for ispow2:
+
+ispow2:
 ==================================================
 
 ```
@@ -11009,8 +11008,8 @@ true
 
 
 
-==================================================
-Help for isprimitivetype:
+
+isprimitivetype:
 ==================================================
 
 ```
@@ -11020,8 +11019,8 @@ isprimitivetype(T) -> Bool
 Determine whether type `T` was declared as a primitive type (i.e. using the `primitive type` syntax). If `T` is not a type, then return `false`.
 
 
-==================================================
-Help for isprint:
+
+isprint:
 ==================================================
 
 ```
@@ -11041,8 +11040,8 @@ true
 ```
 
 
-==================================================
-Help for ispunct:
+
+ispunct:
 ==================================================
 
 ```
@@ -11065,8 +11064,8 @@ true
 ```
 
 
-==================================================
-Help for isqrt:
+
+isqrt:
 ==================================================
 
 ```
@@ -11081,8 +11080,8 @@ julia> isqrt(5)
 ```
 
 
-==================================================
-Help for isreadable:
+
+isreadable:
 ==================================================
 
 ```
@@ -11129,8 +11128,8 @@ Return `true` if the access permissions for the given `path` permitted reading b
 See also [`ispath`](@ref), [`isexecutable`](@ref), [`iswritable`](@ref).
 
 
-==================================================
-Help for isreadonly:
+
+isreadonly:
 ==================================================
 
 ```
@@ -11154,8 +11153,8 @@ false
 ```
 
 
-==================================================
-Help for isready:
+
+isready:
 ==================================================
 
 ```
@@ -11199,8 +11198,8 @@ true
 ```
 
 
-==================================================
-Help for isreal:
+
+isreal:
 ==================================================
 
 ```
@@ -11226,8 +11225,8 @@ false
 ```
 
 
-==================================================
-Help for issetequal:
+
+issetequal:
 ==================================================
 
 ```
@@ -11259,8 +11258,8 @@ Create a function that compares its argument to `x` using [`issetequal`](@ref), 
 
 
 
-==================================================
-Help for issetgid:
+
+issetgid:
 ==================================================
 
 ```
@@ -11270,8 +11269,8 @@ issetgid(path) -> Bool
 Return `true` if `path` has the setgid flag set, `false` otherwise.
 
 
-==================================================
-Help for issetuid:
+
+issetuid:
 ==================================================
 
 ```
@@ -11281,8 +11280,8 @@ issetuid(path) -> Bool
 Return `true` if `path` has the setuid flag set, `false` otherwise.
 
 
-==================================================
-Help for issocket:
+
+issocket:
 ==================================================
 
 ```
@@ -11292,8 +11291,8 @@ issocket(path) -> Bool
 Return `true` if `path` is a socket, `false` otherwise.
 
 
-==================================================
-Help for issorted:
+
+issorted:
 ==================================================
 
 ```
@@ -11322,8 +11321,8 @@ true
 ```
 
 
-==================================================
-Help for isspace:
+
+isspace:
 ==================================================
 
 ```
@@ -11349,8 +11348,8 @@ true
 ```
 
 
-==================================================
-Help for issticky:
+
+issticky:
 ==================================================
 
 ```
@@ -11360,8 +11359,8 @@ issticky(path) -> Bool
 Return `true` if `path` has the sticky bit set, `false` otherwise.
 
 
-==================================================
-Help for isstructtype:
+
+isstructtype:
 ==================================================
 
 ```
@@ -11371,8 +11370,8 @@ isstructtype(T) -> Bool
 Determine whether type `T` was declared as a struct type (i.e. using the `struct` or `mutable struct` keyword). If `T` is not a type, then return `false`.
 
 
-==================================================
-Help for issubnormal:
+
+issubnormal:
 ==================================================
 
 ```
@@ -11397,8 +11396,8 @@ true
 ```
 
 
-==================================================
-Help for issubset:
+
+issubset:
 ==================================================
 
 ```
@@ -11435,8 +11434,8 @@ Create a function that compares its argument to `x` using [`issubset`](@ref), i.
 
 
 
-==================================================
-Help for istaskdone:
+
+istaskdone:
 ==================================================
 
 ```
@@ -11464,8 +11463,8 @@ true
 ```
 
 
-==================================================
-Help for istaskfailed:
+
+istaskfailed:
 ==================================================
 
 ```
@@ -11497,8 +11496,8 @@ true
 
 
 
-==================================================
-Help for istaskstarted:
+
+istaskstarted:
 ==================================================
 
 ```
@@ -11519,8 +11518,8 @@ false
 ```
 
 
-==================================================
-Help for istextmime:
+
+istextmime:
 ==================================================
 
 ```
@@ -11540,8 +11539,8 @@ false
 ```
 
 
-==================================================
-Help for isunordered:
+
+isunordered:
 ==================================================
 
 ```
@@ -11557,8 +11556,8 @@ The values that evaluate to `true` with this predicate may be orderable with res
 
 
 
-==================================================
-Help for isuppercase:
+
+isuppercase:
 ==================================================
 
 ```
@@ -11583,8 +11582,8 @@ false
 ```
 
 
-==================================================
-Help for isvalid:
+
+isvalid:
 ==================================================
 
 ```
@@ -11658,8 +11657,8 @@ true
 
 
 
-==================================================
-Help for iswritable:
+
+iswritable:
 ==================================================
 
 ```
@@ -11706,8 +11705,8 @@ Return `true` if the access permissions for the given `path` permitted writing b
 See also [`ispath`](@ref), [`isexecutable`](@ref), [`isreadable`](@ref).
 
 
-==================================================
-Help for isxdigit:
+
+isxdigit:
 ==================================================
 
 ```
@@ -11727,8 +11726,8 @@ false
 ```
 
 
-==================================================
-Help for iszero:
+
+iszero:
 ==================================================
 
 ```
@@ -11753,8 +11752,8 @@ true
 ```
 
 
-==================================================
-Help for iterate:
+
+iterate:
 ==================================================
 
 ```
@@ -11772,8 +11771,8 @@ Return a tuple of the character in `s` at index `i` with the index of the start 
 See also [`getindex`](@ref), [`checkbounds`](@ref).
 
 
-==================================================
-Help for join:
+
+join:
 ==================================================
 
 ```
@@ -11793,8 +11792,8 @@ julia> join([1,2,3,4,5])
 ```
 
 
-==================================================
-Help for keepat!:
+
+keepat!:
 ==================================================
 
 ```
@@ -11848,8 +11847,8 @@ julia> a
 ```
 
 
-==================================================
-Help for keys:
+
+keys:
 ==================================================
 
 ```
@@ -11924,8 +11923,8 @@ julia> keys(match(r"(?<hour>\d+):(?<minute>\d+)(am|pm)?", "11:30"))
 ```
 
 
-==================================================
-Help for keytype:
+
+keytype:
 ==================================================
 
 ```
@@ -11963,8 +11962,8 @@ Int32
 ```
 
 
-==================================================
-Help for kill:
+
+kill:
 ==================================================
 
 ```
@@ -11974,8 +11973,8 @@ kill(p::Process, signum=Base.SIGTERM)
 Send a signal to a process. The default is to terminate the process. Returns successfully if the process has already exited, but throws an error if killing the process failed for other reasons (e.g. insufficient permissions).
 
 
-==================================================
-Help for kron:
+
+kron:
 ==================================================
 
 ```
@@ -12022,8 +12021,8 @@ julia> reshape(kron(v,w), (length(w), length(v)))
 ```
 
 
-==================================================
-Help for kron!:
+
+kron!:
 ==================================================
 
 ```
@@ -12037,8 +12036,8 @@ Computes the Kronecker product of `A` and `B` and stores the result in `C`, over
 
 
 
-==================================================
-Help for last:
+
+last:
 ==================================================
 
 ```
@@ -12104,8 +12103,8 @@ julia> last("∀ϵ≠0: ϵ²>0", 3)
 ```
 
 
-==================================================
-Help for lastindex:
+
+lastindex:
 ==================================================
 
 ```
@@ -12130,8 +12129,8 @@ julia> lastindex(rand(3,4,5), 2)
 ```
 
 
-==================================================
-Help for lcm:
+
+lcm:
 ==================================================
 
 ```
@@ -12173,8 +12172,8 @@ julia> lcm(1, 3, 5, 7)
 ```
 
 
-==================================================
-Help for ldexp:
+
+ldexp:
 ==================================================
 
 ```
@@ -12193,8 +12192,8 @@ julia> ldexp(5.0, 2)
 ```
 
 
-==================================================
-Help for leading_ones:
+
+leading_ones:
 ==================================================
 
 ```
@@ -12211,8 +12210,8 @@ julia> leading_ones(UInt32(2 ^ 32 - 2))
 ```
 
 
-==================================================
-Help for leading_zeros:
+
+leading_zeros:
 ==================================================
 
 ```
@@ -12229,8 +12228,8 @@ julia> leading_zeros(Int32(1))
 ```
 
 
-==================================================
-Help for length:
+
+length:
 ==================================================
 
 ```
@@ -12295,8 +12294,8 @@ julia> length("jμΛIα")
 ```
 
 
-==================================================
-Help for less:
+
+less:
 ==================================================
 
 ```
@@ -12312,8 +12311,8 @@ less(function, [types])
 Show the definition of a function using the default pager, optionally specifying a tuple of types to indicate which method to see.
 
 
-==================================================
-Help for lock:
+
+lock:
 ==================================================
 
 ```
@@ -12347,8 +12346,8 @@ Acquire the lock associated with `l`, execute `f` with the lock held, and releas
 
 
 
-==================================================
-Help for log:
+
+log:
 ==================================================
 
 ```
@@ -12456,8 +12455,8 @@ julia> log(A)
 ```
 
 
-==================================================
-Help for log10:
+
+log10:
 ==================================================
 
 ```
@@ -12484,8 +12483,8 @@ Stacktrace:
 ```
 
 
-==================================================
-Help for log1p:
+
+log1p:
 ==================================================
 
 ```
@@ -12512,8 +12511,8 @@ Stacktrace:
 ```
 
 
-==================================================
-Help for log2:
+
+log2:
 ==================================================
 
 ```
@@ -12548,8 +12547,8 @@ julia> log2.(2.0 .^ (-1:1))
 ```
 
 
-==================================================
-Help for logrange:
+
+logrange:
 ==================================================
 
 ```
@@ -12591,8 +12590,8 @@ See also [`range`](@ref) for linearly spaced points.
 
 
 
-==================================================
-Help for lowercase:
+
+lowercase:
 ==================================================
 
 ```
@@ -12629,8 +12628,8 @@ julia> lowercase("STRINGS AND THINGS")
 ```
 
 
-==================================================
-Help for lowercasefirst:
+
+lowercasefirst:
 ==================================================
 
 ```
@@ -12649,8 +12648,8 @@ julia> lowercasefirst("Julia")
 ```
 
 
-==================================================
-Help for lpad:
+
+lpad:
 ==================================================
 
 ```
@@ -12671,8 +12670,8 @@ julia> lpad("March", 10)
 
 
 
-==================================================
-Help for lstat:
+
+lstat:
 ==================================================
 
 ```
@@ -12682,8 +12681,8 @@ lstat(file)
 Like [`stat`](@ref), but for symbolic links gets the info for the link itself rather than the file it refers to. This function must be called on a file path rather than a file object or a file descriptor.
 
 
-==================================================
-Help for lstrip:
+
+lstrip:
 ==================================================
 
 ```
@@ -12710,8 +12709,8 @@ julia> lstrip(a)
 ```
 
 
-==================================================
-Help for ltoh:
+
+ltoh:
 ==================================================
 
 ```
@@ -12721,8 +12720,8 @@ ltoh(x)
 Convert the endianness of a value from Little-endian to that used by the Host.
 
 
-==================================================
-Help for macroexpand:
+
+macroexpand:
 ==================================================
 
 ```
@@ -12750,8 +12749,8 @@ julia> macroexpand(M, :(@m2()), recursive=false)
 ```
 
 
-==================================================
-Help for map:
+
+map:
 ==================================================
 
 ```
@@ -12805,8 +12804,8 @@ julia> map(+, [1 2; 3 4], [1,10,100,1000], zeros(3,1))  # iterates until 3rd is 
 ```
 
 
-==================================================
-Help for map!:
+
+map!:
 ==================================================
 
 ```
@@ -12868,8 +12867,8 @@ ValueIterator for a Dict{Symbol, Int64} with 2 entries. Values:
 ```
 
 
-==================================================
-Help for mapfoldl:
+
+mapfoldl:
 ==================================================
 
 ```
@@ -12879,8 +12878,8 @@ mapfoldl(f, op, itr; [init])
 Like [`mapreduce`](@ref), but with guaranteed left associativity, as in [`foldl`](@ref). If provided, the keyword argument `init` will be used exactly once. In general, it will be necessary to provide `init` to work with empty collections.
 
 
-==================================================
-Help for mapfoldr:
+
+mapfoldr:
 ==================================================
 
 ```
@@ -12890,8 +12889,8 @@ mapfoldr(f, op, itr; [init])
 Like [`mapreduce`](@ref), but with guaranteed right associativity, as in [`foldr`](@ref). If provided, the keyword argument `init` will be used exactly once. In general, it will be necessary to provide `init` to work with empty collections.
 
 
-==================================================
-Help for mapreduce:
+
+mapreduce:
 ==================================================
 
 ```
@@ -12945,8 +12944,8 @@ julia> mapreduce(isodd, |, a, dims=1)
 ```
 
 
-==================================================
-Help for mapslices:
+
+mapslices:
 ==================================================
 
 ```
@@ -13016,8 +13015,8 @@ true
 Notice that in `eachslice(A; dims=2)`, the specified dimension is the one *without* a colon in the slice. This is `view(A,:,i,:)`, whereas `mapslices(f, A; dims=(1,3))` uses `A[:,i,:]`. The function `f` may mutate values in the slice without affecting `A`.
 
 
-==================================================
-Help for mark:
+
+mark:
 ==================================================
 
 ```
@@ -13029,8 +13028,8 @@ Add a mark at the current position of stream `s`. Return the marked position.
 See also [`unmark`](@ref), [`reset`](@ref), [`ismarked`](@ref).
 
 
-==================================================
-Help for match:
+
+match:
 ==================================================
 
 ```
@@ -13060,8 +13059,8 @@ true
 ```
 
 
-==================================================
-Help for max:
+
+max:
 ==================================================
 
 ```
@@ -13081,8 +13080,8 @@ missing
 ```
 
 
-==================================================
-Help for maximum:
+
+maximum:
 ==================================================
 
 ```
@@ -13191,8 +13190,8 @@ julia> maximum(abs2, A, dims=2)
 ```
 
 
-==================================================
-Help for maximum!:
+
+maximum!:
 ==================================================
 
 ```
@@ -13224,8 +13223,8 @@ julia> maximum!([1 1], A)
 ```
 
 
-==================================================
-Help for maxintfloat:
+
+maxintfloat:
 ==================================================
 
 ```
@@ -13245,8 +13244,8 @@ maxintfloat(T, S)
 The largest consecutive integer representable in the given floating-point type `T` that also does not exceed the maximum integer representable by the integer type `S`.  Equivalently, it is the minimum of `maxintfloat(T)` and [`typemax(S)`](@ref).
 
 
-==================================================
-Help for memoryref:
+
+memoryref:
 ==================================================
 
 ```
@@ -13263,8 +13262,8 @@ memoryref(::GenericMemoryRef, index::Integer)
 Construct a `GenericMemoryRef` from a memory object and an offset index (1-based) which can also be negative. This always returns an inbounds object, and will throw an error if that is not possible (because the index would result in a shift out-of-bounds of the underlying memory).
 
 
-==================================================
-Help for merge:
+
+merge:
 ==================================================
 
 ```
@@ -13339,8 +13338,8 @@ merge(initial::Face, others::Face...)
 Merge the properties of the `initial` face and `others`, with later faces taking priority.
 
 
-==================================================
-Help for merge!:
+
+merge!:
 ==================================================
 
 ```
@@ -13366,8 +13365,8 @@ Dict{Int64, Int64} with 3 entries:
 ```
 
 
-==================================================
-Help for mergewith:
+
+mergewith:
 ==================================================
 
 ```
@@ -13408,8 +13407,8 @@ true
 ```
 
 
-==================================================
-Help for mergewith!:
+
+mergewith!:
 ==================================================
 
 ```
@@ -13457,8 +13456,8 @@ Dict{Int64, Int64} with 3 entries:
 ```
 
 
-==================================================
-Help for methods:
+
+methods:
 ==================================================
 
 ```
@@ -13476,8 +13475,8 @@ If `types` is specified, return an array of methods whose types match. If `modul
 See also: [`which`](@ref), [`@which`](@ref Main.InteractiveUtils.@which) and [`methodswith`](@ref Main.InteractiveUtils.methodswith).
 
 
-==================================================
-Help for methodswith:
+
+methodswith:
 ==================================================
 
 ```
@@ -13493,8 +13492,8 @@ If keyword `supertypes` is `true`, also return arguments with a parent type of `
 See also: [`methods`](@ref).
 
 
-==================================================
-Help for min:
+
+min:
 ==================================================
 
 ```
@@ -13514,8 +13513,8 @@ missing
 ```
 
 
-==================================================
-Help for minimum:
+
+minimum:
 ==================================================
 
 ```
@@ -13624,8 +13623,8 @@ julia> minimum(abs2, A, dims=2)
 ```
 
 
-==================================================
-Help for minimum!:
+
+minimum!:
 ==================================================
 
 ```
@@ -13657,8 +13656,8 @@ julia> minimum!([1 1], A)
 ```
 
 
-==================================================
-Help for minmax:
+
+minmax:
 ==================================================
 
 ```
@@ -13677,8 +13676,8 @@ julia> minmax('c','b')
 ```
 
 
-==================================================
-Help for missing:
+
+missing:
 ==================================================
 
 ```
@@ -13690,8 +13689,8 @@ A type with no fields whose singleton instance [`missing`](@ref) is used to repr
 See also: [`skipmissing`](@ref), [`nonmissingtype`](@ref), [`Nothing`](@ref).
 
 
-==================================================
-Help for mkdir:
+
+mkdir:
 ==================================================
 
 ```
@@ -13713,8 +13712,8 @@ julia> pwd()
 ```
 
 
-==================================================
-Help for mkpath:
+
+mkpath:
 ==================================================
 
 ```
@@ -13756,8 +13755,8 @@ true
 ```
 
 
-==================================================
-Help for mktemp:
+
+mktemp:
 ==================================================
 
 ```
@@ -13779,8 +13778,8 @@ Apply the function `f` to the result of [`mktemp(parent)`](@ref) and remove the 
 See also: [`mktempdir`](@ref).
 
 
-==================================================
-Help for mktempdir:
+
+mktempdir:
 ==================================================
 
 ```
@@ -13812,8 +13811,8 @@ See also: [`mktemp`](@ref), [`mkdir`](@ref).
 
 
 
-==================================================
-Help for mod:
+
+mod:
 ==================================================
 
 ```
@@ -13899,8 +13898,8 @@ BigInt
 ```
 
 
-==================================================
-Help for mod1:
+
+mod1:
 ==================================================
 
 ```
@@ -13929,8 +13928,8 @@ julia> mod1.([-0.1, 0, 0.1, 1, 2, 2.9, 3, 3.1]', 3)
 ```
 
 
-==================================================
-Help for mod2pi:
+
+mod2pi:
 ==================================================
 
 ```
@@ -13953,8 +13952,8 @@ julia> mod2pi(9*pi/4)
 ```
 
 
-==================================================
-Help for modf:
+
+modf:
 ==================================================
 
 ```
@@ -13974,8 +13973,8 @@ julia> modf(-3.5)
 ```
 
 
-==================================================
-Help for modifyfield!:
+
+modifyfield!:
 ==================================================
 
 ```
@@ -13999,8 +13998,8 @@ If supported by the hardware (for example, atomic increment), this may be optimi
 
 
 
-==================================================
-Help for modifyglobal!:
+
+modifyglobal!:
 ==================================================
 
 ```
@@ -14016,8 +14015,8 @@ Atomically perform the operations to get and set a global after applying the fun
 See also [`modifyproperty!`](@ref Base.modifyproperty!) and [`setglobal!`](@ref).
 
 
-==================================================
-Help for modifyproperty!:
+
+modifyproperty!:
 ==================================================
 
 ```
@@ -14031,8 +14030,8 @@ Invocation of `op(getproperty(x, f), v)` must return a value that can be stored 
 See also [`modifyfield!`](@ref Core.modifyfield!) and [`setproperty!`](@ref Base.setproperty!).
 
 
-==================================================
-Help for mtime:
+
+mtime:
 ==================================================
 
 ```
@@ -14042,8 +14041,8 @@ mtime(file)
 Equivalent to `stat(file).mtime`.
 
 
-==================================================
-Help for muladd:
+
+muladd:
 ==================================================
 
 ```
@@ -14084,8 +14083,8 @@ julia> muladd(A, B, z)
 ```
 
 
-==================================================
-Help for mv:
+
+mv:
 ==================================================
 
 ```
@@ -14124,8 +14123,8 @@ julia> rm("goodbye.txt");
 ```
 
 
-==================================================
-Help for nameof:
+
+nameof:
 ==================================================
 
 ```
@@ -14167,8 +14166,8 @@ nameof(f::Function) -> Symbol
 Get the name of a generic `Function` as a symbol. For anonymous functions, this is a compiler-generated name. For explicitly-declared subtypes of `Function`, it is the name of the function's type.
 
 
-==================================================
-Help for names:
+
+names:
 ==================================================
 
 ```
@@ -14186,8 +14185,8 @@ As a special case, all names defined in `Main` are considered "public", since it
 See also: [`Base.isexported`](@ref), [`Base.ispublic`](@ref), [`Base.@locals`](@ref), [`@__MODULE__`](@ref).
 
 
-==================================================
-Help for nand:
+
+nand:
 ==================================================
 
 ```
@@ -14222,8 +14221,8 @@ julia> [true; true; false] .⊼ [true; false; false]
 ```
 
 
-==================================================
-Help for ncodeunits:
+
+ncodeunits:
 ==================================================
 
 ```
@@ -14258,8 +14257,8 @@ julia> ncodeunits('∫'), ncodeunits('e'), ncodeunits('ˣ')
 See also [`codeunit`](@ref), [`checkbounds`](@ref), [`sizeof`](@ref), [`length`](@ref), [`lastindex`](@ref).
 
 
-==================================================
-Help for ndigits:
+
+ndigits:
 ==================================================
 
 ```
@@ -14293,8 +14292,8 @@ julia> ndigits(-123)
 ```
 
 
-==================================================
-Help for ndims:
+
+ndims:
 ==================================================
 
 ```
@@ -14315,8 +14314,8 @@ julia> ndims(A)
 ```
 
 
-==================================================
-Help for nextfloat:
+
+nextfloat:
 ==================================================
 
 ```
@@ -14334,8 +14333,8 @@ Return the smallest floating point number `y` of the same type as `x` such `x < 
 See also: [`prevfloat`](@ref), [`eps`](@ref), [`issubnormal`](@ref).
 
 
-==================================================
-Help for nextind:
+
+nextind:
 ==================================================
 
 ```
@@ -14406,8 +14405,8 @@ julia> nextind("α", 1, 2)
 ```
 
 
-==================================================
-Help for nextpow:
+
+nextpow:
 ==================================================
 
 ```
@@ -14435,8 +14434,8 @@ julia> nextpow(4, 16)
 ```
 
 
-==================================================
-Help for nextprod:
+
+nextprod:
 ==================================================
 
 ```
@@ -14460,8 +14459,8 @@ julia> 2^2 * 3^3
 
 
 
-==================================================
-Help for nfields:
+
+nfields:
 ==================================================
 
 ```
@@ -14493,8 +14492,8 @@ julia> nfields(ex)
 In these examples, `a` is a [`Rational`](@ref), which has two fields. `b` is an `Int`, which is a primitive bitstype with no fields at all. `ex` is an [`ErrorException`](@ref), which has one field.
 
 
-==================================================
-Help for nonmissingtype:
+
+nonmissingtype:
 ==================================================
 
 ```
@@ -14518,8 +14517,8 @@ Any
 
 
 
-==================================================
-Help for nor:
+
+nor:
 ==================================================
 
 ```
@@ -14557,8 +14556,8 @@ julia> [true; true; false] .⊽ [true; false; false]
 ```
 
 
-==================================================
-Help for normpath:
+
+normpath:
 ==================================================
 
 ```
@@ -14584,8 +14583,8 @@ normpath(path::AbstractString, paths::AbstractString...) -> String
 Convert a set of paths to a normalized path by joining them together and removing "." and ".." entries. Equivalent to `normpath(joinpath(path, paths...))`.
 
 
-==================================================
-Help for nothing:
+
+nothing:
 ==================================================
 
 ```
@@ -14597,8 +14596,8 @@ A type with no fields that is the type of [`nothing`](@ref).
 See also: [`isnothing`](@ref), [`Some`](@ref), [`Missing`](@ref).
 
 
-==================================================
-Help for notify:
+
+notify:
 ==================================================
 
 ```
@@ -14610,8 +14609,8 @@ Wake up tasks waiting for a condition, passing them `val`. If `all` is `true` (t
 Return the count of tasks woken up. Return 0 if no tasks are waiting on `condition`.
 
 
-==================================================
-Help for ntoh:
+
+ntoh:
 ==================================================
 
 ```
@@ -14621,8 +14620,8 @@ ntoh(x)
 Convert the endianness of a value from Network byte order (big-endian) to that used by the Host.
 
 
-==================================================
-Help for ntuple:
+
+ntuple:
 ==================================================
 
 ```
@@ -14652,8 +14651,8 @@ julia> ntuple(i -> 2*i, Val(4))
 ```
 
 
-==================================================
-Help for numerator:
+
+numerator:
 ==================================================
 
 ```
@@ -14673,8 +14672,8 @@ julia> numerator(4)
 ```
 
 
-==================================================
-Help for objectid:
+
+objectid:
 ==================================================
 
 ```
@@ -14688,8 +14687,8 @@ If `x === y` then `objectid(x) == objectid(y)`, and usually when `x !== y`, `obj
 See also [`hash`](@ref), [`IdDict`](@ref).
 
 
-==================================================
-Help for occursin:
+
+occursin:
 ==================================================
 
 ```
@@ -14741,8 +14740,8 @@ false
 ```
 
 
-==================================================
-Help for oftype:
+
+oftype:
 ==================================================
 
 ```
@@ -14766,8 +14765,8 @@ julia> oftype(y, x)
 ```
 
 
-==================================================
-Help for one:
+
+one:
 ==================================================
 
 ```
@@ -14797,8 +14796,8 @@ julia> import Dates; one(Dates.Day(1))
 ```
 
 
-==================================================
-Help for ones:
+
+ones:
 ==================================================
 
 ```
@@ -14822,8 +14821,8 @@ julia> ones(ComplexF64, 2, 3)
 ```
 
 
-==================================================
-Help for oneunit:
+
+oneunit:
 ==================================================
 
 ```
@@ -14844,8 +14843,8 @@ julia> import Dates; oneunit(Dates.Day)
 ```
 
 
-==================================================
-Help for only:
+
+only:
 ==================================================
 
 ```
@@ -14881,8 +14880,8 @@ Stacktrace:
 ```
 
 
-==================================================
-Help for open:
+
+open:
 ==================================================
 
 ```
@@ -15011,8 +15010,8 @@ open(f::Function, command, args...; kwargs...)
 Similar to `open(command, args...; kwargs...)`, but calls `f(stream)` on the resulting process stream, then closes the input stream and waits for the process to complete. Return the value returned by `f` on success. Throw an error if the process failed, or if the process attempts to print anything to stdout.
 
 
-==================================================
-Help for operm:
+
+operm:
 ==================================================
 
 ```
@@ -15022,8 +15021,8 @@ operm(file)
 Like [`uperm`](@ref) but gets the permissions for people who neither own the file nor are a member of the group owning the file
 
 
-==================================================
-Help for pairs:
+
+pairs:
 ==================================================
 
 ```
@@ -15106,8 +15105,8 @@ CartesianIndex(2, 2) e
 See also [`IndexStyle`](@ref), [`axes`](@ref).
 
 
-==================================================
-Help for parent:
+
+parent:
 ==================================================
 
 ```
@@ -15136,8 +15135,8 @@ julia> parent(V)
 ```
 
 
-==================================================
-Help for parentindices:
+
+parentindices:
 ==================================================
 
 ```
@@ -15161,8 +15160,8 @@ julia> parentindices(V)
 ```
 
 
-==================================================
-Help for parentmodule:
+
+parentmodule:
 ==================================================
 
 ```
@@ -15227,8 +15226,8 @@ Return the module in which the given method `m` is defined.
 
 
 
-==================================================
-Help for parse:
+
+parse:
 ==================================================
 
 ```
@@ -15273,8 +15272,8 @@ parse(::Type{SimpleColor}, rgb::String)
 An analogue of `tryparse(SimpleColor, rgb::String)` (which see), that raises an error instead of returning `nothing`.
 
 
-==================================================
-Help for partialsort:
+
+partialsort:
 ==================================================
 
 ```
@@ -15284,8 +15283,8 @@ partialsort(v, k, by=identity, lt=isless, rev=false)
 Variant of [`partialsort!`](@ref) that copies `v` before partially sorting it, thereby returning the same thing as `partialsort!` but leaving `v` unmodified.
 
 
-==================================================
-Help for partialsort!:
+
+partialsort!:
 ==================================================
 
 ```
@@ -15339,8 +15338,8 @@ julia> a
 ```
 
 
-==================================================
-Help for partialsortperm:
+
+partialsortperm:
 ==================================================
 
 ```
@@ -15373,8 +15372,8 @@ julia> v[p]
 ```
 
 
-==================================================
-Help for partialsortperm!:
+
+partialsortperm!:
 ==================================================
 
 ```
@@ -15423,8 +15422,8 @@ julia> partialsortperm!(ix, v, 2:3)
 ```
 
 
-==================================================
-Help for pathof:
+
+pathof:
 ==================================================
 
 ```
@@ -15438,8 +15437,8 @@ Use [`dirname`](@ref) to get the directory part and [`basename`](@ref) to get th
 See also [`pkgdir`](@ref).
 
 
-==================================================
-Help for peakflops:
+
+peakflops:
 ==================================================
 
 ```
@@ -15453,8 +15452,8 @@ peakflops(n::Integer=4096; eltype::DataType=Float64, ntrials::Integer=3, paralle
 
 
 
-==================================================
-Help for peek:
+
+peek:
 ==================================================
 
 ```
@@ -15489,8 +15488,8 @@ peek(stream [, n=1]; skip_newlines=false)
 Look ahead in the stream `n` tokens, returning the token kind. Comments and non-newline whitespace are skipped automatically. Whitespace containing a single newline is returned as kind `K"NewlineWs"` unless `skip_newlines` is true.
 
 
-==================================================
-Help for permute!:
+
+permute!:
 ==================================================
 
 ```
@@ -15525,8 +15524,8 @@ julia> A
 ```
 
 
-==================================================
-Help for permutedims:
+
+permutedims:
 ==================================================
 
 ```
@@ -15702,8 +15701,8 @@ julia> transpose(V)
 ```
 
 
-==================================================
-Help for permutedims!:
+
+permutedims!:
 ==================================================
 
 ```
@@ -15715,8 +15714,8 @@ Permute the dimensions of array `src` and store the result in the array `dest`. 
 See also [`permutedims`](@ref).
 
 
-==================================================
-Help for pi:
+
+pi:
 ==================================================
 
 ```
@@ -15728,8 +15727,8 @@ Number type representing an exact irrational value denoted by the symbol `sym`, 
 See also [`AbstractIrrational`](@ref).
 
 
-==================================================
-Help for pipeline:
+
+pipeline:
 ==================================================
 
 ```
@@ -15760,8 +15759,8 @@ run(pipeline("out.txt", `grep xyz`))
 ```
 
 
-==================================================
-Help for pkgdir:
+
+pkgdir:
 ==================================================
 
 ```
@@ -15789,8 +15788,8 @@ See also [`pathof`](@ref).
 
 
 
-==================================================
-Help for pkgversion:
+
+pkgversion:
 ==================================================
 
 ```
@@ -15808,8 +15807,8 @@ To get the version of the package that imported the current module the form `pkg
 
 
 
-==================================================
-Help for pointer:
+
+pointer:
 ==================================================
 
 ```
@@ -15823,8 +15822,8 @@ This function is "unsafe". Be careful to ensure that a Julia reference to `array
 Calling [`Ref(array[, index])`](@ref Ref) is generally preferable to this function as it guarantees validity.
 
 
-==================================================
-Help for pointer_from_objref:
+
+pointer_from_objref:
 ==================================================
 
 ```
@@ -15838,8 +15837,8 @@ This function may not be called on immutable objects, since they do not have sta
 See also [`unsafe_pointer_to_objref`](@ref).
 
 
-==================================================
-Help for pop!:
+
+pop!:
 ==================================================
 
 ```
@@ -15907,8 +15906,8 @@ julia> pop!(d, "e", 4)
 ```
 
 
-==================================================
-Help for popat!:
+
+popat!:
 ==================================================
 
 ```
@@ -15944,8 +15943,8 @@ ERROR: BoundsError: attempt to access 3-element Vector{Int64} at index [4]
 ```
 
 
-==================================================
-Help for popdisplay:
+
+popdisplay:
 ==================================================
 
 ```
@@ -15956,8 +15955,8 @@ popdisplay(d::AbstractDisplay)
 Pop the topmost backend off of the display-backend stack, or the topmost copy of `d` in the second variant.
 
 
-==================================================
-Help for popfirst!:
+
+popfirst!:
 ==================================================
 
 ```
@@ -15995,8 +15994,8 @@ julia> A
 ```
 
 
-==================================================
-Help for position:
+
+position:
 ==================================================
 
 ```
@@ -16033,8 +16032,8 @@ position(l::Lexer)
 Returns the current position.
 
 
-==================================================
-Help for powermod:
+
+powermod:
 ==================================================
 
 ```
@@ -16063,8 +16062,8 @@ julia> powermod(5, 3, 19)
 ```
 
 
-==================================================
-Help for precision:
+
+precision:
 ==================================================
 
 ```
@@ -16081,8 +16080,8 @@ If `base` is specified, then it returns the maximum corresponding number of sign
 
 
 
-==================================================
-Help for precompile:
+
+precompile:
 ==================================================
 
 ```
@@ -16098,8 +16097,8 @@ precompile(f, argtypes::Tuple{Vararg{Any}}, m::Method)
 Precompile a specific method for the given argument types. This may be used to precompile a different method than the one that would ordinarily be chosen by dispatch, thus mimicking `invoke`.
 
 
-==================================================
-Help for prepend!:
+
+prepend!:
 ==================================================
 
 ```
@@ -16134,8 +16133,8 @@ julia> prepend!([6], [1, 2], [3, 4, 5])
 ```
 
 
-==================================================
-Help for prevfloat:
+
+prevfloat:
 ==================================================
 
 ```
@@ -16151,8 +16150,8 @@ prevfloat(x::AbstractFloat)
 Return the largest floating point number `y` of the same type as `x` such `y < x`. If no such `y` exists (e.g. if `x` is `-Inf` or `NaN`), then return `x`.
 
 
-==================================================
-Help for prevind:
+
+prevind:
 ==================================================
 
 ```
@@ -16223,8 +16222,8 @@ julia> prevind("α", 2, 3)
 ```
 
 
-==================================================
-Help for prevpow:
+
+prevpow:
 ==================================================
 
 ```
@@ -16252,8 +16251,8 @@ julia> prevpow(4, 16)
 ```
 
 
-==================================================
-Help for print:
+
+print:
 ==================================================
 
 ```
@@ -16280,8 +16279,8 @@ julia> String(take!(io))
 ```
 
 
-==================================================
-Help for println:
+
+println:
 ==================================================
 
 ```
@@ -16307,8 +16306,8 @@ julia> String(take!(io))
 ```
 
 
-==================================================
-Help for printstyled:
+
+printstyled:
 ==================================================
 
 ```
@@ -16336,8 +16335,8 @@ See also [`print`](@ref), [`println`](@ref), [`show`](@ref).
 
 
 
-==================================================
-Help for process_exited:
+
+process_exited:
 ==================================================
 
 ```
@@ -16347,8 +16346,8 @@ process_exited(p::Process)
 Determine whether a process has exited.
 
 
-==================================================
-Help for process_running:
+
+process_running:
 ==================================================
 
 ```
@@ -16358,8 +16357,8 @@ process_running(p::Process)
 Determine whether a process is currently running.
 
 
-==================================================
-Help for prod:
+
+prod:
 ==================================================
 
 ```
@@ -16458,8 +16457,8 @@ julia> prod(abs2, A, dims=2)
 ```
 
 
-==================================================
-Help for prod!:
+
+prod!:
 ==================================================
 
 ```
@@ -16491,8 +16490,8 @@ julia> prod!([1 1], A)
 ```
 
 
-==================================================
-Help for promote:
+
+promote:
 ==================================================
 
 ```
@@ -16524,8 +16523,8 @@ Any
 ```
 
 
-==================================================
-Help for promote_rule:
+
+promote_rule:
 ==================================================
 
 ```
@@ -16535,8 +16534,8 @@ promote_rule(type1, type2)
 Specifies what type should be used by [`promote`](@ref) when given values of types `type1` and `type2`. This function should not be called directly, but should have definitions added to it for new types as appropriate.
 
 
-==================================================
-Help for promote_shape:
+
+promote_shape:
 ==================================================
 
 ```
@@ -16560,8 +16559,8 @@ julia> promote_shape((2,3,1,4), (2, 3, 1, 4, 1))
 ```
 
 
-==================================================
-Help for promote_type:
+
+promote_type:
 ==================================================
 
 ```
@@ -16599,8 +16598,8 @@ UInt16
 
 
 
-==================================================
-Help for propertynames:
+
+propertynames:
 ==================================================
 
 ```
@@ -16614,8 +16613,8 @@ Get a tuple or a vector of the properties (`x.property`) of an object `x`. This 
 See also: [`hasproperty`](@ref), [`hasfield`](@ref).
 
 
-==================================================
-Help for push!:
+
+push!:
 ==================================================
 
 ```
@@ -16644,8 +16643,8 @@ See [`sizehint!`](@ref) for notes about the performance model.
 See also [`pushfirst!`](@ref).
 
 
-==================================================
-Help for pushdisplay:
+
+pushdisplay:
 ==================================================
 
 ```
@@ -16655,8 +16654,8 @@ pushdisplay(d::AbstractDisplay)
 Pushes a new display `d` on top of the global display-backend stack. Calling `display(x)` or `display(mime, x)` will display `x` on the topmost compatible backend in the stack (i.e., the topmost backend that does not throw a [`MethodError`](@ref)).
 
 
-==================================================
-Help for pushfirst!:
+
+pushfirst!:
 ==================================================
 
 ```
@@ -16681,8 +16680,8 @@ julia> pushfirst!([1, 2, 3, 4], 5, 6)
 ```
 
 
-==================================================
-Help for put!:
+
+put!:
 ==================================================
 
 ```
@@ -16698,8 +16697,8 @@ For unbuffered channels, blocks until a [`take!`](@ref) is performed by a differ
 
 
 
-==================================================
-Help for pwd:
+
+pwd:
 ==================================================
 
 ```
@@ -16723,8 +16722,8 @@ julia> pwd()
 ```
 
 
-==================================================
-Help for rad2deg:
+
+rad2deg:
 ==================================================
 
 ```
@@ -16743,8 +16742,8 @@ julia> rad2deg(pi)
 ```
 
 
-==================================================
-Help for rand:
+
+rand:
 ==================================================
 
 ```
@@ -16805,8 +16804,8 @@ julia> rand(Float64, (2, 3))
 
 
 
-==================================================
-Help for randn:
+
+randn:
 ==================================================
 
 ```
@@ -16854,8 +16853,8 @@ julia> randn(rng, ComplexF32, (2, 3))
 ```
 
 
-==================================================
-Help for range:
+
+range:
 ==================================================
 
 ```
@@ -16949,8 +16948,8 @@ Special care is taken to ensure intermediate values are computed rationally. To 
 A `UnitRange` is not produced if `step` is provided even if specified as one.
 
 
-==================================================
-Help for rationalize:
+
+rationalize:
 ==================================================
 
 ```
@@ -16973,8 +16972,8 @@ BigInt
 ```
 
 
-==================================================
-Help for read:
+
+read:
 ==================================================
 
 ```
@@ -17050,8 +17049,8 @@ read(command::Cmd, String)
 Run `command` and return the resulting output as a `String`.
 
 
-==================================================
-Help for read!:
+
+read!:
 ==================================================
 
 ```
@@ -17062,8 +17061,8 @@ read!(filename::AbstractString, array::AbstractArray)
 Read binary data from an I/O stream or file, filling in `array`.
 
 
-==================================================
-Help for readavailable:
+
+readavailable:
 ==================================================
 
 ```
@@ -17077,8 +17076,8 @@ Read available buffered data from a stream. Actual I/O is performed only if no d
 
 
 
-==================================================
-Help for readbytes!:
+
+readbytes!:
 ==================================================
 
 ```
@@ -17096,8 +17095,8 @@ Read at most `nb` bytes from `stream` into `b`, returning the number of bytes re
 If `all` is `true` (the default), this function will block repeatedly trying to read all requested bytes, until an error or end-of-file occurs. If `all` is `false`, at most one `read` call is performed, and the amount of data returned is device-dependent. Note that not all stream types support the `all` option.
 
 
-==================================================
-Help for readchomp:
+
+readchomp:
 ==================================================
 
 ```
@@ -17118,8 +17117,8 @@ julia> rm("my_file.txt");
 ```
 
 
-==================================================
-Help for readdir:
+
+readdir:
 ==================================================
 
 ```
@@ -17196,8 +17195,8 @@ julia> readdir(abspath("base"), join=true)
 ```
 
 
-==================================================
-Help for readeach:
+
+readeach:
 ==================================================
 
 ```
@@ -17225,8 +17224,8 @@ JuliaLang is a GitHub organization.
 ```
 
 
-==================================================
-Help for readline:
+
+readline:
 ==================================================
 
 ```
@@ -17264,8 +17263,8 @@ Logan
 ```
 
 
-==================================================
-Help for readlines:
+
+readlines:
 ==================================================
 
 ```
@@ -17294,8 +17293,8 @@ julia> rm("my_file.txt")
 ```
 
 
-==================================================
-Help for readlink:
+
+readlink:
 ==================================================
 
 ```
@@ -17305,8 +17304,8 @@ readlink(path::AbstractString) -> String
 Return the target location a symbolic link `path` points to.
 
 
-==================================================
-Help for readuntil:
+
+readuntil:
 ==================================================
 
 ```
@@ -17333,8 +17332,8 @@ julia> rm("my_file.txt")
 ```
 
 
-==================================================
-Help for real:
+
+real:
 ==================================================
 
 ```
@@ -17391,8 +17390,8 @@ julia> real(fill(2 - im))
 ```
 
 
-==================================================
-Help for realpath:
+
+realpath:
 ==================================================
 
 ```
@@ -17404,19 +17403,8 @@ Canonicalize a path by expanding symbolic links and removing "." and ".." entrie
 (This function throws an exception if `path` does not exist in the filesystem.)
 
 
-==================================================
-Help for redirect_stderr:
-==================================================
 
-```
-Any::DataType
-```
-
-`Any` is the union of all types. It has the defining property `isa(x, Any) == true` for any `x`. `Any` therefore describes the entire universe of possible values. For example `Integer` is a subset of `Any` that includes `Int`, `Int8`, and other integer types.
-
-
-==================================================
-Help for redirect_stdin:
+redirect_stderr:
 ==================================================
 
 ```
@@ -17426,8 +17414,19 @@ Any::DataType
 `Any` is the union of all types. It has the defining property `isa(x, Any) == true` for any `x`. `Any` therefore describes the entire universe of possible values. For example `Integer` is a subset of `Any` that includes `Int`, `Int8`, and other integer types.
 
 
+
+redirect_stdin:
 ==================================================
-Help for redirect_stdio:
+
+```
+Any::DataType
+```
+
+`Any` is the union of all types. It has the defining property `isa(x, Any) == true` for any `x`. `Any` therefore describes the entire universe of possible values. For example `Integer` is a subset of `Any` that includes `Int`, `Int8`, and other integer types.
+
+
+
+redirect_stdio:
 ==================================================
 
 ```
@@ -17500,8 +17499,8 @@ julia> redirect_stdio(f, stdout=io, stdin=io) # not supported
 
 
 
-==================================================
-Help for redirect_stdout:
+
+redirect_stdout:
 ==================================================
 
 ```
@@ -17511,8 +17510,8 @@ Any::DataType
 `Any` is the union of all types. It has the defining property `isa(x, Any) == true` for any `x`. `Any` therefore describes the entire universe of possible values. For example `Integer` is a subset of `Any` that includes `Int`, `Int8`, and other integer types.
 
 
-==================================================
-Help for redisplay:
+
+redisplay:
 ==================================================
 
 ```
@@ -17525,8 +17524,8 @@ redisplay(d::AbstractDisplay, mime, x)
 By default, the `redisplay` functions simply call [`display`](@ref). However, some display backends may override `redisplay` to modify an existing display of `x` (if any). Using `redisplay` is also a hint to the backend that `x` may be redisplayed several times, and the backend may choose to defer the display until (for example) the next interactive prompt.
 
 
-==================================================
-Help for reduce:
+
+reduce:
 ==================================================
 
 ```
@@ -17584,8 +17583,8 @@ julia> reduce(max, a, dims=1)
 ```
 
 
-==================================================
-Help for reenable_sigint:
+
+reenable_sigint:
 ==================================================
 
 ```
@@ -17595,8 +17594,8 @@ reenable_sigint(f::Function)
 Re-enable Ctrl-C handler during execution of a function. Temporarily reverses the effect of [`disable_sigint`](@ref).
 
 
-==================================================
-Help for reim:
+
+reim:
 ==================================================
 
 ```
@@ -17631,8 +17630,8 @@ julia> reim(fill(2 - im))
 ```
 
 
-==================================================
-Help for reinterpret:
+
+reinterpret:
 ==================================================
 
 ```
@@ -17737,8 +17736,8 @@ julia> reinterpret(reshape, Int, a)             # the result is a matrix
 ```
 
 
-==================================================
-Help for relpath:
+
+relpath:
 ==================================================
 
 ```
@@ -17750,8 +17749,8 @@ Return a relative filepath to `path` either from the current directory or from a
 On Windows, case sensitivity is applied to every part of the path except drive letters. If `path` and `startpath` refer to different drives, the absolute path of `path` is returned.
 
 
-==================================================
-Help for rem:
+
+rem:
 ==================================================
 
 ```
@@ -17841,8 +17840,8 @@ true
 ```
 
 
-==================================================
-Help for rem2pi:
+
+rem2pi:
 ==================================================
 
 ```
@@ -17873,8 +17872,8 @@ julia> rem2pi(7pi/4, RoundDown)
 ```
 
 
-==================================================
-Help for repeat:
+
+repeat:
 ==================================================
 
 ```
@@ -17967,8 +17966,8 @@ julia> repeat('A', 3)
 ```
 
 
-==================================================
-Help for replace:
+
+replace:
 ==================================================
 
 ```
@@ -18067,8 +18066,8 @@ julia> replace("abcabc", "a" => "b", "b" => "c", r".+" => "a")
 ```
 
 
-==================================================
-Help for replace!:
+
+replace!:
 ==================================================
 
 ```
@@ -18124,8 +18123,8 @@ Set{Int64} with 2 elements:
 ```
 
 
-==================================================
-Help for replacefield!:
+
+replacefield!:
 ==================================================
 
 ```
@@ -18153,8 +18152,8 @@ If supported by the hardware, this may be optimized to the appropriate hardware 
 
 
 
-==================================================
-Help for replaceglobal!:
+
+replaceglobal!:
 ==================================================
 
 ```
@@ -18171,8 +18170,8 @@ Atomically perform the operations to get and conditionally set a global to a giv
 See also [`replaceproperty!`](@ref Base.replaceproperty!) and [`setglobal!`](@ref).
 
 
-==================================================
-Help for replaceproperty!:
+
+replaceproperty!:
 ==================================================
 
 ```
@@ -18184,8 +18183,8 @@ Perform a compare-and-swap operation on `x.f` from `expected` to `desired`, per 
 See also [`replacefield!`](@ref Core.replacefield!) [`setproperty!`](@ref Base.setproperty!), [`setpropertyonce!`](@ref Base.setpropertyonce!).
 
 
-==================================================
-Help for repr:
+
+repr:
 ==================================================
 
 ```
@@ -18241,8 +18240,8 @@ julia> repr("text/plain", A)
 ```
 
 
-==================================================
-Help for reset:
+
+reset:
 ==================================================
 
 ```
@@ -18260,8 +18259,8 @@ reset(::Event)
 Reset an [`Event`](@ref) back into an un-set state. Then any future calls to `wait` will block until [`notify`](@ref) is called again.
 
 
-==================================================
-Help for reshape:
+
+reshape:
 ==================================================
 
 ```
@@ -18314,8 +18313,8 @@ julia> reshape(1:6, 2, 3)
 ```
 
 
-==================================================
-Help for resize!:
+
+resize!:
 ==================================================
 
 ```
@@ -18349,8 +18348,8 @@ julia> a[1:6]
 ```
 
 
-==================================================
-Help for rethrow:
+
+rethrow:
 ==================================================
 
 ```
@@ -18364,8 +18363,8 @@ Rethrow the current exception from within a `catch` block. The rethrown exceptio
 
 
 
-==================================================
-Help for retry:
+
+retry:
 ==================================================
 
 ```
@@ -18389,8 +18388,8 @@ retry(read, check=(s,e)->isa(e, IOError))(io, 128; all=false)
 ```
 
 
-==================================================
-Help for reverse:
+
+reverse:
 ==================================================
 
 ```
@@ -18500,8 +18499,8 @@ reverse(o::Base.Ordering)
 reverses ordering specified by `o`.
 
 
-==================================================
-Help for reverse!:
+
+reverse!:
 ==================================================
 
 ```
@@ -18543,8 +18542,8 @@ Like [`reverse`](@ref), but operates in-place in `A`.
 
 
 
-==================================================
-Help for reverseind:
+
+reverseind:
 ==================================================
 
 ```
@@ -18569,8 +18568,8 @@ Julia🚀
 ```
 
 
-==================================================
-Help for rm:
+
+rm:
 ==================================================
 
 ```
@@ -18595,8 +18594,8 @@ Stacktrace:
 ```
 
 
-==================================================
-Help for rot180:
+
+rot180:
 ==================================================
 
 ```
@@ -18645,8 +18644,8 @@ julia> rot180(a,2)
 ```
 
 
-==================================================
-Help for rotl90:
+
+rotl90:
 ==================================================
 
 ```
@@ -18705,8 +18704,8 @@ julia> rotl90(a,4)
 ```
 
 
-==================================================
-Help for rotr90:
+
+rotr90:
 ==================================================
 
 ```
@@ -18765,8 +18764,8 @@ julia> rotr90(a,4)
 ```
 
 
-==================================================
-Help for round:
+
+round:
 ==================================================
 
 ```
@@ -18914,8 +18913,8 @@ Valid rounding modes for `round(::Period, ::T, ::RoundingMode)` are `RoundNeares
 Rounding to a `precision` of `Month`s or `Year`s is not supported, as these `Period`s are of inconsistent length.
 
 
-==================================================
-Help for rounding:
+
+rounding:
 ==================================================
 
 ```
@@ -18927,8 +18926,8 @@ Get the current floating point rounding mode for type `T`, controlling the round
 See [`RoundingMode`](@ref) for available modes.
 
 
-==================================================
-Help for rpad:
+
+rpad:
 ==================================================
 
 ```
@@ -18949,8 +18948,8 @@ julia> rpad("March", 20)
 
 
 
-==================================================
-Help for rsplit:
+
+rsplit:
 ==================================================
 
 ```
@@ -18985,8 +18984,8 @@ julia> rsplit(a, "."; limit=2)
 ```
 
 
-==================================================
-Help for rstrip:
+
+rstrip:
 ==================================================
 
 ```
@@ -19013,8 +19012,8 @@ julia> rstrip(a)
 ```
 
 
-==================================================
-Help for run:
+
+run:
 ==================================================
 
 ```
@@ -19030,8 +19029,8 @@ If `wait` is false, the process runs asynchronously. You can later wait for it a
 When `wait` is false, the process' I/O streams are directed to `devnull`. When `wait` is true, I/O streams are shared with the parent process. Use [`pipeline`](@ref) to control I/O redirection.
 
 
-==================================================
-Help for samefile:
+
+samefile:
 ==================================================
 
 ```
@@ -19041,8 +19040,8 @@ samefile(path_a::AbstractString, path_b::AbstractString)
 Check if the paths `path_a` and `path_b` refer to the same existing file or directory.
 
 
-==================================================
-Help for schedule:
+
+schedule:
 ==================================================
 
 ```
@@ -19083,8 +19082,8 @@ true
 ```
 
 
-==================================================
-Help for searchsorted:
+
+searchsorted:
 ==================================================
 
 ```
@@ -19120,8 +19119,8 @@ julia> searchsorted([1=>"one", 2=>"two", 2=>"two", 4=>"four"], 2=>"two", by=firs
 ```
 
 
-==================================================
-Help for searchsortedfirst:
+
+searchsortedfirst:
 ==================================================
 
 ```
@@ -19159,8 +19158,8 @@ julia> searchsortedfirst([1=>"one", 2=>"two", 4=>"four"], 3=>"three", by=first) 
 ```
 
 
-==================================================
-Help for searchsortedlast:
+
+searchsortedlast:
 ==================================================
 
 ```
@@ -19196,8 +19195,8 @@ julia> searchsortedlast([1=>"one", 2=>"two", 4=>"four"], 3=>"three", by=first) #
 ```
 
 
-==================================================
-Help for sec:
+
+sec:
 ==================================================
 
 ```
@@ -19213,8 +19212,8 @@ sec(A::AbstractMatrix)
 Compute the matrix secant of a square matrix `A`.
 
 
-==================================================
-Help for secd:
+
+secd:
 ==================================================
 
 ```
@@ -19224,8 +19223,8 @@ secd(x)
 Compute the secant of `x`, where `x` is in degrees.
 
 
-==================================================
-Help for sech:
+
+sech:
 ==================================================
 
 ```
@@ -19241,8 +19240,8 @@ sech(A::AbstractMatrix)
 Compute the matrix hyperbolic secant of square matrix `A`.
 
 
-==================================================
-Help for seek:
+
+seek:
 ==================================================
 
 ```
@@ -19263,8 +19262,8 @@ julia> read(io, Char)
 ```
 
 
-==================================================
-Help for seekend:
+
+seekend:
 ==================================================
 
 ```
@@ -19274,8 +19273,8 @@ seekend(s)
 Seek a stream to its end.
 
 
-==================================================
-Help for seekstart:
+
+seekstart:
 ==================================================
 
 ```
@@ -19301,8 +19300,8 @@ julia> read(io, Char)
 ```
 
 
-==================================================
-Help for selectdim:
+
+selectdim:
 ==================================================
 
 ```
@@ -19335,8 +19334,8 @@ julia> selectdim(A, 2, 3:4)
 ```
 
 
-==================================================
-Help for set_zero_subnormals:
+
+set_zero_subnormals:
 ==================================================
 
 ```
@@ -19352,8 +19351,8 @@ If `yes` is `false`, subsequent floating-point operations follow rules for IEEE 
 
 
 
-==================================================
-Help for setcpuaffinity:
+
+setcpuaffinity:
 ==================================================
 
 ```
@@ -19385,8 +19384,8 @@ julia> 0b010011
 ```
 
 
-==================================================
-Help for setdiff:
+
+setdiff:
 ==================================================
 
 ```
@@ -19407,8 +19406,8 @@ julia> setdiff([1,2,3], [3,4,5])
 ```
 
 
-==================================================
-Help for setdiff!:
+
+setdiff!:
 ==================================================
 
 ```
@@ -19434,8 +19433,8 @@ Set{Int64} with 1 element:
 ```
 
 
-==================================================
-Help for setenv:
+
+setenv:
 ==================================================
 
 ```
@@ -19449,8 +19448,8 @@ The `dir` keyword argument can be used to specify a working directory for the co
 See also [`Cmd`](@ref), [`addenv`](@ref), [`ENV`](@ref), [`pwd`](@ref).
 
 
-==================================================
-Help for setfield!:
+
+setfield!:
 ==================================================
 
 ```
@@ -19482,8 +19481,8 @@ ERROR: setfield!: immutable struct of type Rational cannot be changed
 ```
 
 
-==================================================
-Help for setfieldonce!:
+
+setfieldonce!:
 ==================================================
 
 ```
@@ -19506,8 +19505,8 @@ return ok
 
 
 
-==================================================
-Help for setglobal!:
+
+setglobal!:
 ==================================================
 
 ```
@@ -19548,8 +19547,8 @@ julia> M.a
 ```
 
 
-==================================================
-Help for setglobalonce!:
+
+setglobalonce!:
 ==================================================
 
 ```
@@ -19566,8 +19565,8 @@ Atomically perform the operations to set a global to a given value, only if it w
 See also [`setpropertyonce!`](@ref Base.setpropertyonce!) and [`setglobal!`](@ref).
 
 
-==================================================
-Help for setindex!:
+
+setindex!:
 ==================================================
 
 ```
@@ -19616,8 +19615,8 @@ julia> A
 ```
 
 
-==================================================
-Help for setprecision:
+
+setprecision:
 ==================================================
 
 ```
@@ -19656,8 +19655,8 @@ Note: `nextfloat()`, `prevfloat()` do not use the precision mentioned by `setpre
 
 
 
-==================================================
-Help for setproperty!:
+
+setproperty!:
 ==================================================
 
 ```
@@ -19674,8 +19673,8 @@ The syntax `a.b = c` calls `setproperty!(a, :b, c)`. The syntax `@atomic order a
 See also [`setfield!`](@ref Core.setfield!), [`propertynames`](@ref Base.propertynames) and [`getproperty`](@ref Base.getproperty).
 
 
-==================================================
-Help for setpropertyonce!:
+
+setpropertyonce!:
 ==================================================
 
 ```
@@ -19691,8 +19690,8 @@ See also [`setfieldonce!`](@ref Core.replacefield!), [`setproperty!`](@ref Base.
 
 
 
-==================================================
-Help for setrounding:
+
+setrounding:
 ==================================================
 
 ```
@@ -19723,8 +19722,8 @@ setrounding(T, old)
 See [`RoundingMode`](@ref) for available rounding modes.
 
 
-==================================================
-Help for show:
+
+show:
 ==================================================
 
 ```
@@ -19776,8 +19775,8 @@ julia> Day(1)
 Container types generally implement 3-argument `show` by calling `show(io, MIME"text/plain"(), x)` for elements `x`, with `:compact => true` set in an [`IOContext`](@ref) passed as the first argument.
 
 
-==================================================
-Help for showable:
+
+showable:
 ==================================================
 
 ```
@@ -19799,8 +19798,8 @@ false
 ```
 
 
-==================================================
-Help for showerror:
+
+showerror:
 ==================================================
 
 ```
@@ -19832,8 +19831,8 @@ ERROR: MyException: test exception
 ```
 
 
-==================================================
-Help for sign:
+
+sign:
 ==================================================
 
 ```
@@ -19861,8 +19860,8 @@ julia> sign(0 + im)
 ```
 
 
-==================================================
-Help for signbit:
+
+signbit:
 ==================================================
 
 ```
@@ -19890,8 +19889,8 @@ true
 ```
 
 
-==================================================
-Help for signed:
+
+signed:
 ==================================================
 
 ```
@@ -19918,8 +19917,8 @@ Convert a number to a signed integer. If the argument is unsigned, it is reinter
 See also: [`unsigned`](@ref), [`sign`](@ref), [`signbit`](@ref).
 
 
-==================================================
-Help for significand:
+
+significand:
 ==================================================
 
 ```
@@ -19947,8 +19946,8 @@ julia> significand(-Inf), significand(Inf), significand(NaN)
 ```
 
 
-==================================================
-Help for similar:
+
+similar:
 ==================================================
 
 ```
@@ -20008,8 +20007,8 @@ similar(BitArray, (axes(A, 2),))
 would create a 1-dimensional logical array whose indices match those of the columns of `A`.
 
 
-==================================================
-Help for sin:
+
+sin:
 ==================================================
 
 ```
@@ -20061,8 +20060,8 @@ julia> sin(fill(1.0, (2,2)))
 ```
 
 
-==================================================
-Help for sinc:
+
+sinc:
 ==================================================
 
 ```
@@ -20074,8 +20073,8 @@ Compute normalized sinc function $\operatorname{sinc}(x) = \sin(\pi x) / (\pi x)
 See also [`cosc`](@ref), its derivative.
 
 
-==================================================
-Help for sincos:
+
+sincos:
 ==================================================
 
 ```
@@ -20109,8 +20108,8 @@ julia> C
 ```
 
 
-==================================================
-Help for sincosd:
+
+sincosd:
 ==================================================
 
 ```
@@ -20124,8 +20123,8 @@ Simultaneously compute the sine and cosine of `x`, where `x` is in degrees.
 
 
 
-==================================================
-Help for sincospi:
+
+sincospi:
 ==================================================
 
 ```
@@ -20141,8 +20140,8 @@ Simultaneously compute [`sinpi(x)`](@ref) and [`cospi(x)`](@ref) (the sine and c
 See also: [`cispi`](@ref), [`sincosd`](@ref), [`sinpi`](@ref).
 
 
-==================================================
-Help for sind:
+
+sind:
 ==================================================
 
 ```
@@ -20156,8 +20155,8 @@ Compute sine of `x`, where `x` is in degrees. If `x` is a matrix, `x` needs to b
 
 
 
-==================================================
-Help for sinh:
+
+sinh:
 ==================================================
 
 ```
@@ -20173,8 +20172,8 @@ sinh(A::AbstractMatrix)
 Compute the matrix hyperbolic sine of a square matrix `A`.
 
 
-==================================================
-Help for sinpi:
+
+sinpi:
 ==================================================
 
 ```
@@ -20186,8 +20185,8 @@ Compute $\sin(\pi x)$ more accurately than `sin(pi*x)`, especially for large `x`
 See also [`sind`](@ref), [`cospi`](@ref), [`sincospi`](@ref).
 
 
-==================================================
-Help for size:
+
+size:
 ==================================================
 
 ```
@@ -20213,8 +20212,8 @@ julia> size(A, 2)
 ```
 
 
-==================================================
-Help for sizehint!:
+
+sizehint!:
 ==================================================
 
 ```
@@ -20242,8 +20241,8 @@ For types that support `sizehint!`,
 
 
 
-==================================================
-Help for sizeof:
+
+sizeof:
 ==================================================
 
 ```
@@ -20308,8 +20307,8 @@ julia> sizeof("∀")
 ```
 
 
-==================================================
-Help for skip:
+
+skip:
 ==================================================
 
 ```
@@ -20332,8 +20331,8 @@ julia> read(io, Char)
 ```
 
 
-==================================================
-Help for skipchars:
+
+skipchars:
 ==================================================
 
 ```
@@ -20356,8 +20355,8 @@ julia> String(readavailable(buf))
 ```
 
 
-==================================================
-Help for skipmissing:
+
+skipmissing:
 ==================================================
 
 ```
@@ -20406,8 +20405,8 @@ julia> collect(skipmissing([1 missing; 2 missing]))
 ```
 
 
-==================================================
-Help for sleep:
+
+sleep:
 ==================================================
 
 ```
@@ -20417,8 +20416,8 @@ sleep(seconds)
 Block the current task for a specified number of seconds. The minimum sleep time is 1 millisecond or input of `0.001`.
 
 
-==================================================
-Help for something:
+
+something:
 ==================================================
 
 ```
@@ -20449,8 +20448,8 @@ ERROR: ArgumentError: No value arguments present
 ```
 
 
-==================================================
-Help for sort:
+
+sort:
 ==================================================
 
 ```
@@ -20505,8 +20504,8 @@ julia> sort(A, dims = 2)
 ```
 
 
-==================================================
-Help for sort!:
+
+sort!:
 ==================================================
 
 ```
@@ -20621,8 +20620,8 @@ julia> sort!(A, dims = 2); A
 ```
 
 
-==================================================
-Help for sortperm:
+
+sortperm:
 ==================================================
 
 ```
@@ -20671,8 +20670,8 @@ julia> sortperm(A, dims = 2)
 ```
 
 
-==================================================
-Help for sortperm!:
+
+sortperm!:
 ==================================================
 
 ```
@@ -20720,8 +20719,8 @@ julia> sortperm!(p, A; dims=2); p
 ```
 
 
-==================================================
-Help for sortslices:
+
+sortslices:
 ==================================================
 
 ```
@@ -20832,8 +20831,8 @@ julia> sortslices(reshape([5; 4; 3; 2; 1], (1,1,5)), dims=3, by=x->x[1,1])
 ```
 
 
-==================================================
-Help for splat:
+
+splat:
 ==================================================
 
 ```
@@ -20865,8 +20864,8 @@ julia> my_add((1,2,3))
 ```
 
 
-==================================================
-Help for splice!:
+
+splice!:
 ==================================================
 
 ```
@@ -20957,8 +20956,8 @@ julia> A
 ```
 
 
-==================================================
-Help for split:
+
+split:
 ==================================================
 
 ```
@@ -20990,8 +20989,8 @@ julia> split(a, ".")
 ```
 
 
-==================================================
-Help for splitdir:
+
+splitdir:
 ==================================================
 
 ```
@@ -21008,8 +21007,8 @@ julia> splitdir("/home/myuser")
 ```
 
 
-==================================================
-Help for splitdrive:
+
+splitdrive:
 ==================================================
 
 ```
@@ -21019,8 +21018,8 @@ splitdrive(path::AbstractString) -> (AbstractString, AbstractString)
 On Windows, split a path into the drive letter part and the path part. On Unix systems, the first component is always the empty string.
 
 
-==================================================
-Help for splitext:
+
+splitext:
 ==================================================
 
 ```
@@ -21043,8 +21042,8 @@ julia> splitext("/home/my.user/example")
 ```
 
 
-==================================================
-Help for splitpath:
+
+splitpath:
 ==================================================
 
 ```
@@ -21069,8 +21068,8 @@ julia> splitpath("/home/myuser/example.jl")
 ```
 
 
-==================================================
-Help for sprint:
+
+sprint:
 ==================================================
 
 ```
@@ -21096,8 +21095,8 @@ julia> sprint(showerror, BoundsError([1], 100))
 ```
 
 
-==================================================
-Help for sqrt:
+
+sqrt:
 ==================================================
 
 ```
@@ -21168,8 +21167,8 @@ julia> sqrt(A)
 ```
 
 
-==================================================
-Help for stack:
+
+stack:
 ==================================================
 
 ```
@@ -21285,8 +21284,8 @@ julia> stack(eachrow([1 2 3; 4 5 6]), (10, 100); dims=1) do row, n
 ```
 
 
-==================================================
-Help for stacktrace:
+
+stacktrace:
 ==================================================
 
 ```
@@ -21296,8 +21295,8 @@ stacktrace([trace::Vector{Ptr{Cvoid}},] [c_funcs::Bool=false]) -> StackTrace
 Return a stack trace in the form of a vector of `StackFrame`s. (By default stacktrace doesn't return C functions, but this can be enabled.) When called without specifying a trace, `stacktrace` first calls `backtrace`.
 
 
-==================================================
-Help for startswith:
+
+startswith:
 ==================================================
 
 ```
@@ -21367,8 +21366,8 @@ true
 ```
 
 
-==================================================
-Help for stat:
+
+stat:
 ==================================================
 
 ```
@@ -21394,40 +21393,8 @@ Return a structure whose fields contain information about the file. The fields o
 | ctime   | `Float64`                       | Unix timestamp of when the file's metadata was changed             |
 
 
-==================================================
-Help for stderr:
-==================================================
 
-No documentation found for public symbol.
-
-# Summary
-
-```
-mutable struct Base.TTY
-```
-
-# Fields
-
-```
-handle    :: Ptr{Nothing}
-status    :: Int64
-buffer    :: IOBuffer
-cond      :: Base.GenericCondition{Base.Threads.SpinLock}
-readerror :: Any
-sendbuf   :: Union{Nothing, IOBuffer}
-lock      :: ReentrantLock
-throttle  :: Int64
-```
-
-# Supertype Hierarchy
-
-```
-Base.TTY <: Base.LibuvStream <: IO <: Any
-```
-
-
-==================================================
-Help for stdin:
+stderr:
 ==================================================
 
 No documentation found for public symbol.
@@ -21458,8 +21425,8 @@ Base.TTY <: Base.LibuvStream <: IO <: Any
 ```
 
 
-==================================================
-Help for stdout:
+
+stdin:
 ==================================================
 
 No documentation found for public symbol.
@@ -21490,8 +21457,40 @@ Base.TTY <: Base.LibuvStream <: IO <: Any
 ```
 
 
+
+stdout:
 ==================================================
-Help for step:
+
+No documentation found for public symbol.
+
+# Summary
+
+```
+mutable struct Base.TTY
+```
+
+# Fields
+
+```
+handle    :: Ptr{Nothing}
+status    :: Int64
+buffer    :: IOBuffer
+cond      :: Base.GenericCondition{Base.Threads.SpinLock}
+readerror :: Any
+sendbuf   :: Union{Nothing, IOBuffer}
+lock      :: ReentrantLock
+throttle  :: Int64
+```
+
+# Supertype Hierarchy
+
+```
+Base.TTY <: Base.LibuvStream <: IO <: Any
+```
+
+
+
+step:
 ==================================================
 
 ```
@@ -21517,8 +21516,8 @@ julia> step(range(2.5, stop=10.9, length=85))
 ```
 
 
-==================================================
-Help for stride:
+
+stride:
 ==================================================
 
 ```
@@ -21542,8 +21541,8 @@ julia> stride(A,3)
 ```
 
 
-==================================================
-Help for strides:
+
+strides:
 ==================================================
 
 ```
@@ -21564,8 +21563,8 @@ julia> strides(A)
 ```
 
 
-==================================================
-Help for string:
+
+string:
 ==================================================
 
 ```
@@ -21604,8 +21603,8 @@ julia> string("a", 1, true)
 ```
 
 
-==================================================
-Help for strip:
+
+strip:
 ==================================================
 
 ```
@@ -21633,8 +21632,8 @@ julia> strip("{3, 5}\n", ['{', '}', '\n'])
 ```
 
 
-==================================================
-Help for subtypes:
+
+subtypes:
 ==================================================
 
 ```
@@ -21656,8 +21655,8 @@ julia> subtypes(Integer)
 ```
 
 
-==================================================
-Help for success:
+
+success:
 ==================================================
 
 ```
@@ -21667,8 +21666,8 @@ success(command)
 Run a command object, constructed with backticks (see the [Running External Programs](@ref) section in the manual), and tell whether it was successful (exited with a code of 0). An exception is raised if the process cannot be started.
 
 
-==================================================
-Help for sum:
+
+sum:
 ==================================================
 
 ```
@@ -21779,8 +21778,8 @@ julia> sum(abs2, A, dims=2)
 ```
 
 
-==================================================
-Help for sum!:
+
+sum!:
 ==================================================
 
 ```
@@ -21812,8 +21811,8 @@ julia> sum!([1 1], A)
 ```
 
 
-==================================================
-Help for summary:
+
+summary:
 ==================================================
 
 ```
@@ -21836,8 +21835,8 @@ julia> summary(zeros(2))
 ```
 
 
-==================================================
-Help for supertype:
+
+supertype:
 ==================================================
 
 ```
@@ -21854,8 +21853,8 @@ Signed
 ```
 
 
-==================================================
-Help for supertypes:
+
+supertypes:
 ==================================================
 
 ```
@@ -21874,8 +21873,8 @@ julia> supertypes(Int)
 ```
 
 
-==================================================
-Help for swapfield!:
+
+swapfield!:
 ==================================================
 
 ```
@@ -21896,8 +21895,8 @@ return y
 
 
 
-==================================================
-Help for swapglobal!:
+
+swapglobal!:
 ==================================================
 
 ```
@@ -21913,8 +21912,8 @@ Atomically perform the operations to simultaneously get and set a global.
 See also [`swapproperty!`](@ref Base.swapproperty!) and [`setglobal!`](@ref).
 
 
-==================================================
-Help for swapproperty!:
+
+swapproperty!:
 ==================================================
 
 ```
@@ -21926,8 +21925,8 @@ The syntax `@atomic a.b, _ = c, a.b` returns `(c, swapproperty!(a, :b, c, :seque
 See also [`swapfield!`](@ref Core.swapfield!) and [`setproperty!`](@ref Base.setproperty!).
 
 
-==================================================
-Help for symdiff:
+
+symdiff:
 ==================================================
 
 ```
@@ -21952,8 +21951,8 @@ Int64[]
 ```
 
 
-==================================================
-Help for symdiff!:
+
+symdiff!:
 ==================================================
 
 ```
@@ -21967,8 +21966,8 @@ Construct the symmetric difference of the passed in sets, and overwrite `s` with
 
 
 
-==================================================
-Help for symlink:
+
+symlink:
 ==================================================
 
 ```
@@ -21992,8 +21991,8 @@ See also: [`hardlink`](@ref).
 
 
 
-==================================================
-Help for systemerror:
+
+systemerror:
 ==================================================
 
 ```
@@ -22004,8 +22003,8 @@ systemerror(sysfunc, iftrue::Bool)
 Raises a `SystemError` for `errno` with the descriptive string `sysfunc` if `iftrue` is `true`
 
 
-==================================================
-Help for take!:
+
+take!:
 ==================================================
 
 ```
@@ -22059,8 +22058,8 @@ julia> take!(c)
 ```
 
 
-==================================================
-Help for tan:
+
+tan:
 ==================================================
 
 ```
@@ -22087,8 +22086,8 @@ julia> tan(fill(1.0, (2,2)))
 ```
 
 
-==================================================
-Help for tand:
+
+tand:
 ==================================================
 
 ```
@@ -22102,8 +22101,8 @@ Compute tangent of `x`, where `x` is in degrees. If `x` is a matrix, `x` needs t
 
 
 
-==================================================
-Help for tanh:
+
+tanh:
 ==================================================
 
 ```
@@ -22141,8 +22140,8 @@ tanh(A::AbstractMatrix)
 Compute the matrix hyperbolic tangent of a square matrix `A`.
 
 
-==================================================
-Help for tanpi:
+
+tanpi:
 ==================================================
 
 ```
@@ -22158,8 +22157,8 @@ Compute $\tan(\pi x)$ more accurately than `tan(pi*x)`, especially for large `x`
 See also [`tand`](@ref), [`sinpi`](@ref), [`cospi`](@ref), [`sincospi`](@ref).
 
 
-==================================================
-Help for task_local_storage:
+
+task_local_storage:
 ==================================================
 
 ```
@@ -22181,8 +22180,8 @@ task_local_storage(body, key, value)
 Call the function `body` with a modified task-local storage, in which `value` is assigned to `key`; the previous value of `key`, or lack thereof, is restored afterwards. Useful for emulating dynamic scoping.
 
 
-==================================================
-Help for tempdir:
+
+tempdir:
 ==================================================
 
 ```
@@ -22192,8 +22191,8 @@ tempdir()
 Gets the path of the temporary directory. On Windows, `tempdir()` uses the first environment variable found in the ordered list `TMP`, `TEMP`, `USERPROFILE`. On all other operating systems, `tempdir()` uses the first environment variable found in the ordered list `TMPDIR`, `TMP`, `TEMP`, and `TEMPDIR`. If none of these are found, the path `"/tmp"` is used.
 
 
-==================================================
-Help for tempname:
+
+tempname:
 ==================================================
 
 ```
@@ -22215,8 +22214,8 @@ The `cleanup` option controls whether the process attempts to delete the returne
 
 
 
-==================================================
-Help for textwidth:
+
+textwidth:
 ==================================================
 
 ```
@@ -22249,8 +22248,8 @@ julia> textwidth("March")
 ```
 
 
-==================================================
-Help for thisind:
+
+thisind:
 ==================================================
 
 ```
@@ -22284,8 +22283,8 @@ ERROR: BoundsError: attempt to access 2-codeunit String at index [-1]
 ```
 
 
-==================================================
-Help for throw:
+
+throw:
 ==================================================
 
 ```
@@ -22297,8 +22296,8 @@ Throw an object as an exception.
 See also: [`rethrow`](@ref), [`error`](@ref).
 
 
-==================================================
-Help for time:
+
+time:
 ==================================================
 
 ```
@@ -22314,8 +22313,8 @@ time() -> Float64
 Get the system time in seconds since the epoch, with fairly high (typically, microsecond) resolution.
 
 
-==================================================
-Help for time_ns:
+
+time_ns:
 ==================================================
 
 ```
@@ -22325,8 +22324,8 @@ time_ns() -> UInt64
 Get the time in nanoseconds. The time corresponding to 0 is undefined, and wraps every 5.8 years.
 
 
-==================================================
-Help for timedwait:
+
+timedwait:
 ==================================================
 
 ```
@@ -22352,8 +22351,8 @@ julia> timedwait(()->istaskdone(t), 6.5)
 ```
 
 
-==================================================
-Help for titlecase:
+
+titlecase:
 ==================================================
 
 ```
@@ -22399,8 +22398,8 @@ julia> titlecase("a-a b-b", wordsep = c->c==' ')
 ```
 
 
-==================================================
-Help for to_indices:
+
+to_indices:
 ==================================================
 
 ```
@@ -22437,8 +22436,8 @@ julia> to_indices(A, (1,2)) # no shape checking
 ```
 
 
-==================================================
-Help for touch:
+
+touch:
 ==================================================
 
 ```
@@ -22477,8 +22476,8 @@ Update the `mtime` on the lock, to indicate it is still fresh.
 See also the `refresh` keyword in the [`mkpidlock`](@ref) constructor.
 
 
-==================================================
-Help for trailing_ones:
+
+trailing_ones:
 ==================================================
 
 ```
@@ -22495,8 +22494,8 @@ julia> trailing_ones(3)
 ```
 
 
-==================================================
-Help for trailing_zeros:
+
+trailing_zeros:
 ==================================================
 
 ```
@@ -22513,8 +22512,8 @@ julia> trailing_zeros(2)
 ```
 
 
-==================================================
-Help for transcode:
+
+transcode:
 ==================================================
 
 ```
@@ -22544,8 +22543,8 @@ julia> transcode(String, transcode(UInt16, str))
 ```
 
 
-==================================================
-Help for transpose:
+
+transpose:
 ==================================================
 
 ```
@@ -22643,8 +22642,8 @@ transpose(F::Factorization)
 Lazy transpose of the factorization `F`. By default, returns a [`TransposeFactorization`](@ref), except for `Factorization`s with real `eltype`, in which case returns an [`AdjointFactorization`](@ref).
 
 
-==================================================
-Help for trues:
+
+trues:
 ==================================================
 
 ```
@@ -22663,8 +22662,8 @@ julia> trues(2,3)
 ```
 
 
-==================================================
-Help for trunc:
+
+trunc:
 ==================================================
 
 ```
@@ -22710,8 +22709,8 @@ julia> trunc(DateTime("1996-01-01T12:30:00"), Day)
 ```
 
 
-==================================================
-Help for truncate:
+
+truncate:
 ==================================================
 
 ```
@@ -22745,8 +22744,8 @@ julia> String(take!(io))
 ```
 
 
-==================================================
-Help for trylock:
+
+trylock:
 ==================================================
 
 ```
@@ -22760,8 +22759,8 @@ Each successful `trylock` must be matched by an [`unlock`](@ref).
 Function `trylock` combined with [`islocked`](@ref) can be used for writing the test-and-test-and-set or exponential backoff algorithms *if it is supported by the `typeof(lock)`* (read its documentation).
 
 
-==================================================
-Help for tryparse:
+
+tryparse:
 ==================================================
 
 ```
@@ -22791,8 +22790,8 @@ julia> tryparse(SimpleColor, "#nocolor")
 ```
 
 
-==================================================
-Help for tuple:
+
+tuple:
 ==================================================
 
 ```
@@ -22817,8 +22816,8 @@ julia> Tuple(Real[1, 2, pi])  # takes a collection
 ```
 
 
-==================================================
-Help for typeassert:
+
+typeassert:
 ==================================================
 
 ```
@@ -22837,8 +22836,8 @@ Stacktrace:
 ```
 
 
-==================================================
-Help for typeintersect:
+
+typeintersect:
 ==================================================
 
 ```
@@ -22850,8 +22849,8 @@ Compute a type that contains the intersection of `T` and `S`. Usually this will 
 A special case where exact behavior is guaranteed: when `T <: S`, `typeintersect(S, T) == T == typeintersect(T, S)`.
 
 
-==================================================
-Help for typejoin:
+
+typejoin:
 ==================================================
 
 ```
@@ -22871,8 +22870,8 @@ Number
 ```
 
 
-==================================================
-Help for typemax:
+
+typemax:
 ==================================================
 
 ```
@@ -22903,8 +22902,8 @@ julia> floatmax(Float32)  # largest finite Float32 floating point number
 ```
 
 
-==================================================
-Help for typemin:
+
+typemin:
 ==================================================
 
 ```
@@ -22935,8 +22934,8 @@ julia> nextfloat(-Inf32)  # smallest finite Float32 floating point number
 ```
 
 
-==================================================
-Help for typeof:
+
+typeof:
 ==================================================
 
 ```
@@ -22962,8 +22961,8 @@ Matrix{Float64} (alias for Array{Float64, 2})
 ```
 
 
-==================================================
-Help for undef:
+
+undef:
 ==================================================
 
 ```
@@ -22983,8 +22982,8 @@ julia> Array{Float64, 1}(UndefInitializer(), 3)
 ```
 
 
-==================================================
-Help for unescape_string:
+
+unescape_string:
 ==================================================
 
 ```
@@ -23023,8 +23022,8 @@ julia> unescape_string("aaa \\g \\n", ['g']) # using `keep` argument
 ```
 
 
-==================================================
-Help for union:
+
+union:
 ==================================================
 
 ```
@@ -23070,8 +23069,8 @@ Set{Int64} with 3 elements:
 ```
 
 
-==================================================
-Help for union!:
+
+union!:
 ==================================================
 
 ```
@@ -23101,8 +23100,8 @@ Set{Int64} with 5 elements:
 ```
 
 
-==================================================
-Help for unique:
+
+unique:
 ==================================================
 
 ```
@@ -23209,8 +23208,8 @@ julia> unique(A, dims=3)
 ```
 
 
-==================================================
-Help for unique!:
+
+unique!:
 ==================================================
 
 ```
@@ -23278,8 +23277,8 @@ julia> unique!(B)
 ```
 
 
-==================================================
-Help for unlock:
+
+unlock:
 ==================================================
 
 ```
@@ -23291,8 +23290,8 @@ Releases ownership of the `lock`.
 If this is a recursive lock which has been acquired before, decrement an internal counter and return immediately.
 
 
-==================================================
-Help for unmark:
+
+unmark:
 ==================================================
 
 ```
@@ -23304,8 +23303,8 @@ Remove a mark from stream `s`. Return `true` if the stream was marked, `false` o
 See also [`mark`](@ref), [`reset`](@ref), [`ismarked`](@ref).
 
 
-==================================================
-Help for unsafe_copyto!:
+
+unsafe_copyto!:
 ==================================================
 
 ```
@@ -23325,8 +23324,8 @@ Copy `N` elements from a source array to a destination, starting at the linear i
 The `unsafe` prefix on this function indicates that no validation is performed to ensure that N is inbounds on either array. Incorrect usage may corrupt or segfault your program, in the same manner as C.
 
 
-==================================================
-Help for unsafe_load:
+
+unsafe_load:
 ==================================================
 
 ```
@@ -23346,8 +23345,8 @@ The `unsafe` prefix on this function indicates that no validation is performed o
 See also: [`atomic`](@ref)
 
 
-==================================================
-Help for unsafe_modify!:
+
+unsafe_modify!:
 ==================================================
 
 ```
@@ -23372,8 +23371,8 @@ The `unsafe` prefix on this function indicates that no validation is performed o
 See also: [`modifyproperty!`](@ref Base.modifyproperty!), [`atomic`](@ref)
 
 
-==================================================
-Help for unsafe_pointer_to_objref:
+
+unsafe_pointer_to_objref:
 ==================================================
 
 ```
@@ -23385,8 +23384,8 @@ Convert a `Ptr` to an object reference. Assumes the pointer refers to a valid he
 See also [`pointer_from_objref`](@ref).
 
 
-==================================================
-Help for unsafe_read:
+
+unsafe_read:
 ==================================================
 
 ```
@@ -23398,8 +23397,8 @@ Copy `nbytes` from the `IO` stream object into `ref` (converted to a pointer).
 It is recommended that subtypes `T<:IO` override the following method signature to provide more efficient implementations: `unsafe_read(s::T, p::Ptr{UInt8}, n::UInt)`
 
 
-==================================================
-Help for unsafe_replace!:
+
+unsafe_replace!:
 ==================================================
 
 ```
@@ -23427,8 +23426,8 @@ The `unsafe` prefix on this function indicates that no validation is performed o
 See also: [`replaceproperty!`](@ref Base.replaceproperty!), [`atomic`](@ref)
 
 
-==================================================
-Help for unsafe_store!:
+
+unsafe_store!:
 ==================================================
 
 ```
@@ -23448,8 +23447,8 @@ The `unsafe` prefix on this function indicates that no validation is performed o
 See also: [`atomic`](@ref)
 
 
-==================================================
-Help for unsafe_string:
+
+unsafe_string:
 ==================================================
 
 ```
@@ -23461,8 +23460,8 @@ Copy a string from the address of a C-style (NUL-terminated) string encoded as U
 This function is labeled "unsafe" because it will crash if `p` is not a valid memory address to data of the requested length.
 
 
-==================================================
-Help for unsafe_swap!:
+
+unsafe_swap!:
 ==================================================
 
 ```
@@ -23486,8 +23485,8 @@ The `unsafe` prefix on this function indicates that no validation is performed o
 See also: [`swapproperty!`](@ref Base.swapproperty!), [`atomic`](@ref)
 
 
-==================================================
-Help for unsafe_trunc:
+
+unsafe_trunc:
 ==================================================
 
 ```
@@ -23507,8 +23506,8 @@ julia> unsafe_trunc(Int, NaN)
 ```
 
 
-==================================================
-Help for unsafe_wrap:
+
+unsafe_wrap:
 ==================================================
 
 ```
@@ -23520,8 +23519,8 @@ Wrap a Julia `Array` object around the data at the address given by `pointer`, w
 This function is labeled "unsafe" because it will crash if `pointer` is not a valid memory address to data of the requested length. Unlike [`unsafe_load`](@ref) and [`unsafe_store!`](@ref), the programmer is responsible also for ensuring that the underlying data is not accessed through two arrays of different element type, similar to the strict aliasing rule in C.
 
 
-==================================================
-Help for unsafe_write:
+
+unsafe_write:
 ==================================================
 
 ```
@@ -23533,8 +23532,8 @@ Copy `nbytes` from `ref` (converted to a pointer) into the `IO` object.
 It is recommended that subtypes `T<:IO` override the following method signature to provide more efficient implementations: `unsafe_write(s::T, p::Ptr{UInt8}, n::UInt)`
 
 
-==================================================
-Help for unsigned:
+
+unsigned:
 ==================================================
 
 ```
@@ -23577,8 +23576,8 @@ julia> signed(unsigned(-2))
 ```
 
 
-==================================================
-Help for uperm:
+
+uperm:
 ==================================================
 
 ```
@@ -23596,8 +23595,8 @@ Get the permissions of the owner of the file as a bitfield of
 For allowed arguments, see [`stat`](@ref).
 
 
-==================================================
-Help for uppercase:
+
+uppercase:
 ==================================================
 
 ```
@@ -23634,8 +23633,8 @@ julia> uppercase("Julia")
 ```
 
 
-==================================================
-Help for uppercasefirst:
+
+uppercasefirst:
 ==================================================
 
 ```
@@ -23654,8 +23653,8 @@ julia> uppercasefirst("python")
 ```
 
 
-==================================================
-Help for valtype:
+
+valtype:
 ==================================================
 
 ```
@@ -23690,8 +23689,8 @@ String
 ```
 
 
-==================================================
-Help for values:
+
+values:
 ==================================================
 
 ```
@@ -23736,8 +23735,8 @@ julia> collect(values(D))
 ```
 
 
-==================================================
-Help for varinfo:
+
+varinfo:
 ==================================================
 
 ```
@@ -23757,8 +23756,8 @@ The memory consumption estimate is an approximate lower bound on the size of the
 The output of `varinfo` is intended for display purposes only.  See also [`names`](@ref) to get an array of symbols defined in a module, which is suitable for more general manipulations.
 
 
-==================================================
-Help for vcat:
+
+vcat:
 ==================================================
 
 ```
@@ -23821,8 +23820,8 @@ true
 ```
 
 
-==================================================
-Help for vec:
+
+vec:
 ==================================================
 
 ```
@@ -23855,8 +23854,8 @@ julia> vec(1:3)
 See also [`reshape`](@ref), [`dropdims`](@ref).
 
 
-==================================================
-Help for versioninfo:
+
+versioninfo:
 ==================================================
 
 ```
@@ -23874,8 +23873,8 @@ Print information about the version of Julia in use. The output is controlled wi
 See also: [`VERSION`](@ref).
 
 
-==================================================
-Help for view:
+
+view:
 ==================================================
 
 ```
@@ -23918,8 +23917,8 @@ julia> view(2:5, 2:3) # returns a range as type is immutable
 ```
 
 
-==================================================
-Help for wait:
+
+wait:
 ==================================================
 
 ```
@@ -23968,8 +23967,8 @@ Special note for [`Threads.Condition`](@ref):
 The caller must be holding the [`lock`](@ref) that owns a `Threads.Condition` before calling this method. The calling task will be blocked until some other task wakes it, usually by calling [`notify`](@ref) on the same `Threads.Condition` object. The lock will be atomically released when blocking (even if it was locked recursively), and will be reacquired before returning.
 
 
-==================================================
-Help for walkdir:
+
+walkdir:
 ==================================================
 
 ```
@@ -24011,8 +24010,8 @@ julia> (root, dirs, files) = first(itr)
 ```
 
 
-==================================================
-Help for which:
+
+which:
 ==================================================
 
 ```
@@ -24038,8 +24037,8 @@ which(module, symbol)
 Return the module in which the binding for the variable referenced by `symbol` in `module` was created.
 
 
-==================================================
-Help for widemul:
+
+widemul:
 ==================================================
 
 ```
@@ -24064,8 +24063,8 @@ julia> widemul(typemax(Int8), typemax(Int8))  # == 127^2
 ```
 
 
-==================================================
-Help for widen:
+
+widen:
 ==================================================
 
 ```
@@ -24089,8 +24088,8 @@ julia> widen(1.5f0)
 ```
 
 
-==================================================
-Help for withenv:
+
+withenv:
 ==================================================
 
 ```
@@ -24104,8 +24103,8 @@ Execute `f` in an environment that is temporarily modified (not replaced as in `
 
 
 
-==================================================
-Help for write:
+
+write:
 ==================================================
 
 ```
@@ -24185,8 +24184,8 @@ Write the canonical binary representation of `content` to a file, which will be 
 Return the number of bytes written into the file.
 
 
-==================================================
-Help for xor:
+
+xor:
 ==================================================
 
 ```
@@ -24221,8 +24220,8 @@ julia> [true; true; false] .⊻ [true; false; false]
 ```
 
 
-==================================================
-Help for zero:
+
+zero:
 ==================================================
 
 ```
@@ -24250,8 +24249,8 @@ julia> zero(rand(2,2))
 ```
 
 
-==================================================
-Help for zeros:
+
+zeros:
 ==================================================
 
 ```
@@ -24275,8 +24274,8 @@ julia> zeros(Int8, 2, 3)
 ```
 
 
-==================================================
-Help for zip:
+
+zip:
 ==================================================
 
 ```
