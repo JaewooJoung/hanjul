@@ -82,7 +82,7 @@
             line-height: 1.5;
         }
 
-        .translate-btn, .copy-btn {
+        .translate-btn {
             width: 50px;
             align-self: center;
             padding: 10px;
@@ -94,7 +94,7 @@
             margin: 0 10px;
         }
 
-        .translate-btn:hover, .copy-btn:hover {
+        .translate-btn:hover {
             background-color: #059862;
         }
 
@@ -112,11 +112,51 @@
         }
 
         .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             background-color: #282A35;
             color: white;
             padding: 10px;
             margin-bottom: 10px;
             border-radius: 4px 4px 0 0;
+        }
+
+        .copy-container {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .copy-btn {
+            background: none;
+            border: none;
+            color: white;
+            cursor: pointer;
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            border-radius: 4px;
+        }
+
+        .copy-btn:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .copy-btn svg {
+            width: 16px;
+            height: 16px;
+        }
+
+        .copy-message {
+            display: none;
+            font-size: 12px;
+            color: #04AA6D;
+            margin-left: 5px;
+        }
+
+        .copy-message.show {
+            display: inline;
         }
     </style>
 </head>
@@ -195,9 +235,19 @@
             </div>
             <button class="translate-btn" onclick="translateCode()">→</button>
             <div class="editor-container">
-                <div class="header">Julia Code</div>
+                <div class="header">
+                    <span>Julia Code</span>
+                    <div class="copy-container">
+                        <span id="copy-message" class="copy-message">Copied!</span>
+                        <button class="copy-btn" onclick="copyToClipboard()" title="Copy to clipboard">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
                 <div id="julia-code" class="result"></div>
-                <button class="copy-btn" onclick="copyToClipboard()">Copy to Clipboard</button>
             </div>
         </div>
     </div>
@@ -280,6 +330,29 @@
             );
 
             document.getElementById('julia-code').innerHTML = translatedCode;
+        }
+
+        function copyToClipboard() {
+            const juliaCode = document.getElementById('julia-code');
+            const copyMessage = document.getElementById('copy-message');
+            
+            // Get text without HTML tags
+            const textToCopy = juliaCode.innerText;
+
+            // Copy to clipboard
+            navigator.clipboard.writeText(textToCopy)
+                .then(() => {
+                    // Show the "Copied!" message
+                    copyMessage.classList.add('show');
+                    
+                    // Hide the message after 2 seconds
+                    setTimeout(() => {
+                        copyMessage.classList.remove('show');
+                    }, 2000);
+                })
+                .catch(err => {
+                    console.error('Failed to copy text:', err);
+                });
         }
 
         // Add example code when the page loads
