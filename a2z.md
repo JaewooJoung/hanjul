@@ -1,65 +1,65 @@
-줄리아 도움말 문서
+Julia Help Documentation
 ======================
-생성일: 2024-11-29T03:16:27.543
+Generated on: 2024-11-29T03:16:27.543
 
 
 
 
-복근:
+abs:
 ==================================================
 
 ```
-복근(x)
+abs(x)
 ```
 
-'x'의 절대값입니다.
+The absolute value of `x`.
 
-부호가 있는 정수에 'abs'를 적용하면 오버플로가 발생하여 음수 값이 반환될 수 있습니다. 이 오버플로는 부호가 있는 정수의 최소 표현 가능한 값에 'abs'를 적용할 때만 발생합니다. 즉, 예상대로 '-x'가 아닌 'x == typemin((x의 종류)', 'abs(x) == x < 0'일 때입니다.
+When `abs` is applied to signed integers, overflow may occur, resulting in the return of a negative value. This overflow occurs only when `abs` is applied to the minimum representable value of a signed integer. That is, when `x == typemin(typeof(x))`, `abs(x) == x < 0`, not `-x` as might be expected.
 
-또한 참조하십시오: ['abs2'](@ref), ['unsign'](@ref), ['sign'(@ref).
+See also: [`abs2`](@ref), [`unsigned`](@ref), [`sign`](@ref).
 
-# 예
+# Examples
 
-"'Jldoctest'
-줄리아> 복근 (-3)
+```jldoctest
+julia> abs(-3)
 3
 
-줄리아> 복근(1 + Im)
+julia> abs(1 + im)
 1.4142135623730951
 
-줄리아> 복근.(Int8[-128-127 -126 0 126 127] # typemin에서 오버플로 (Int8)
-1×6 매트릭스{Int8]:
+julia> abs.(Int8[-128 -127 -126 0 126 127])  # overflow at typemin(Int8)
+1×6 Matrix{Int8}:
  -128  127  126  0  126  127
 
-줄리아> 최대값(abs, [1, -2, 3, -4])
+julia> maximum(abs, [1, -2, 3, -4])
 4
 ```
 
 
 
-복근2:
+abs2:
 ==================================================
 
 ```
 abs2(x)
 ```
 
-절대값 'x'의 제곱.
+Squared absolute value of `x`.
 
-이는 'abs(x)^2'보다 빠를 수 있으며, 특히 'abs(x)'가 ['hypot'](@ref)를 통해 제곱근이 필요한 복소수의 경우 더욱 그렇습니다.
+This can be faster than `abs(x)^2`, especially for complex numbers where `abs(x)` requires a square root via [`hypot`](@ref).
 
-['abs'](@ref), ['conj'(@ref), ['real'](@ref)도 참조하세요.
+See also [`abs`](@ref), [`conj`](@ref), [`real`](@ref).
 
-# 예
+# Examples
 
-"'Jldoctest'
-줄리아> 복근2 (-3)
+```jldoctest
+julia> abs2(-3)
 9
 
 julia> abs2(3.0 + 4.0im)
 25.0
 
-julia> sum(abs2, [1+2im, 3+4im])  # 선형대수.norm(x)^2
+julia> sum(abs2, [1+2im, 3+4im])  # LinearAlgebra.norm(x)^2
 30
 ```
 
