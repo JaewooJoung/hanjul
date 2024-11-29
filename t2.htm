@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Korean Julia Translator</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Verdana, sans-serif;
+            background-color: #f1f1f1;
+        }
+
+        .split-view {
+            display: flex;
+            height: 100vh;
+        }
+
+        .sidebar {
+            width: 250px;
+            background-color: #282A35;
+            color: white;
+            padding: 20px;
+            overflow-y: auto;
+        }
+
+        .category {
+            margin-bottom: 20px;
+        }
+
+        .category-title {
+            color: #04AA6D;
+            margin-bottom: 10px;
+            font-weight: bold;
+            border-bottom: 1px solid #04AA6D;
+            padding-bottom: 5px;
+        }
+
+        .sidebar button {
+            display: block;
+            width: 100%;
+            padding: 8px 16px;
+            margin: 4px 0;
+            background-color: #3f4247;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-align: left;
+            font-size: 0.9em;
+        }
+
+        .sidebar button:hover {
+            background-color: #04AA6D;
+        }
+
+        .main-content {
+            flex: 1;
+            display: flex;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .editor-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .editor {
+            flex: 1;
+            padding: 15px;
+            background-color: #ffffff;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            font-family: 'Consolas', monospace;
+            resize: none;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .translate-btn, .copy-btn {
+            width: 50px;
+            align-self: center;
+            padding: 10px;
+            background-color: #04AA6D;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 0 10px;
+        }
+
+        .translate-btn:hover, .copy-btn:hover {
+            background-color: #059862;
+        }
+
+        .result {
+            flex: 1;
+            padding: 15px;
+            background-color: #ffffff;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            font-family: 'Consolas', monospace;
+            white-space: pre-wrap;
+            font-size: 14px;
+            line-height: 1.5;
+            overflow-y: auto;
+        }
+
+        .header {
+            background-color: #282A35;
+            color: white;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 4px 4px 0 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="split-view">
+        <div class="sidebar">
+            <div class="category">
+                <div class="category-title">기본 제어 흐름</div>
+                <button onclick="insertKeyword('사용하기')">사용하기 (using)</button>
+                <button onclick="insertKeyword('만약')">만약 (if)</button>
+                <button onclick="insertKeyword('끝')">끝 (end)</button>
+                <button onclick="insertKeyword('기타')">기타 (else)</button>
+                <button onclick="insertKeyword('아니면')">아니면 (elseif)</button>
+                <button onclick="insertKeyword('동안')">동안 (while)</button>
+                <button onclick="insertKeyword('반복')">반복 (for)</button>
+                <button onclick="insertKeyword('시도')">시도 (try)</button>
+                <button onclick="insertKeyword('잡기')">잡기 (catch)</button>
+                <button onclick="insertKeyword('마지막')">마지막 (finally)</button>
+                <button onclick="insertKeyword('이탈')">이탈 (break)</button>
+                <button onclick="insertKeyword('계속')">계속 (continue)</button>
+                <button onclick="insertKeyword('복귀')">복귀 (return)</button>
+            </div>
+            
+            <div class="category">
+                <div class="category-title">함수 및 타입 정의</div>
+                <button onclick="insertKeyword('함수')">함수 (function)</button>
+                <button onclick="insertKeyword('매크로')">매크로 (macro)</button>
+                <button onclick="insertKeyword('구조체')">구조체 (struct)</button>
+                <button onclick="insertKeyword('추상타입')">추상타입 (abstract type)</button>
+                <button onclick="insertKeyword('기본타입')">기본타입 (primitive type)</button>
+                <button onclick="insertKeyword('가변구조체')">가변구조체 (mutable struct)</button>
+            </div>
+
+            <div class="category">
+                <div class="category-title">모듈 및 임포트</div>
+                <button onclick="insertKeyword('모듈')">모듈 (module)</button>
+                <button onclick="insertKeyword('불러오기')">불러오기 (import)</button>
+                <button onclick="insertKeyword('내보내기')">내보내기 (export)</button>
+            </div>
+
+            <div class="category">
+                <div class="category-title">타입 시스템</div>
+                <button onclick="insertKeyword('어디')">어디 (where)</button>
+                <button onclick="insertKeyword('형')">형 (type)</button>
+                <button onclick="insertKeyword('타입변수')">타입변수 (typealias)</button>
+            </div>
+
+            <div class="category">
+                <div class="category-title">변수 범위</div>
+                <button onclick="insertKeyword('전역')">전역 (global)</button>
+                <button onclick="insertKeyword('지역')">지역 (local)</button>
+                <button onclick="insertKeyword('상수')">상수 (const)</button>
+            </div>
+
+            <div class="category">
+                <div class="category-title">기타 키워드</div>
+                <button onclick="insertKeyword('던지기')">던지기 (throw)</button>
+                <button onclick="insertKeyword('참')">참 (true)</button>
+                <button onclick="insertKeyword('거짓')">거짓 (false)</button>
+                <button onclick="insertKeyword('없음')">없음 (nothing)</button>
+                <button onclick="insertKeyword('정의안됨')">정의안됨 (undefined)</button>
+                <button onclick="insertKeyword('인용')">인용 (quote)</button>
+                <button onclick="insertKeyword('포함')">포함 (include)</button>
+                <button onclick="insertKeyword('대입')">대입 (let)</button>
+                <button onclick="insertKeyword('실행')">실행 (do)</button>
+                <button onclick="insertKeyword('여러개')">여러개 (begin)</button>
+                <button onclick="insertKeyword('결합')">결합 (Union)</button>
+                <button onclick="insertKeyword('출력')">출력 (println)</button>
+                <button onclick="insertKeyword('읽기')">읽기 (readline)</button>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="editor-container">
+                <div class="header">Korean Julia Code</div>
+                <textarea id="korean-code" class="editor" placeholder="Write your Korean Julia code here..."></textarea>
+            </div>
+            <button class="translate-btn" onclick="translateCode()">→</button>
+            <div class="editor-container">
+                <div class="header">Julia Code</div>
+                <div id="julia-code" class="result"></div>
+                <button class="copy-btn" onclick="copyToClipboard()">Copy to Clipboard</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const translations = {
+            '사용하기': 'using',
+            '만약': 'if',
+            '끝': 'end',
+            '기타': 'else',
+            '아니면': 'elseif',
+            '동안': 'while',
+            '반복': 'for',
+            '시도': 'try',
+            '잡기': 'catch',
+            '마지막': 'finally',
+            '이탈': 'break',
+            '계속': 'continue',
+            '복귀': 'return',
+            '함수': 'function',
+            '매크로': 'macro',
+            '구조체': 'struct',
+            '추상타입': 'abstract type',
+            '기본타입': 'primitive type',
+            '가변구조체': 'mutable struct',
+            '모듈': 'module',
+            '불러오기': 'import',
+            '사용': 'using',
+            '내보내기': 'export',
+            '어디': 'where',
+            '형': 'type',
+            '타입변수': 'typealias',
+            '전역': 'global',
+            '지역': 'local',
+            '상수': 'const',
+            '던지기': 'throw',
+            '참': 'true',
+            '거짓': 'false',
+            '없음': 'nothing',
+            '정의안됨': 'undefined',
+            '인용': 'quote',
+            '포함': 'include',
+            '대입': 'let',
+            '실행': 'do',
+            '여러개': 'begin',
+            '결합': 'Union',
+            '출력': 'println',
+            '읽기': 'readline'
+        };
+
+        function insertKeyword(keyword) {
+            const editor = document.getElementById('korean-code');
+            const cursorPos = editor.selectionStart;
+            const textBefore = editor.value.substring(0, cursorPos);
+            const textAfter = editor.value.substring(cursorPos);
+            editor.value = textBefore + keyword + ' ' + textAfter;
+            editor.focus();
+            editor.selectionStart = editor.selectionEnd = cursorPos + keyword.length + 1;
+        }
+
+        function translateCode() {
+            const koreanCode = document.getElementById('korean-code').value;
+            let translatedCode = koreanCode;
+
+            // Translate each keyword
+            for (const [korean, english] of Object.entries(translations)) {
+                const regex = new RegExp(korean, 'g');
+                translatedCode = translatedCode.replace(regex, english);
+            }
+
+            // Add syntax highlighting for Julia keywords
+            translatedCode = translatedCode.replace(
+                /\b(function|if|else|elseif|while|for|try|catch|finally|break|continue|return|module|import|using|export|where|type|global|local|const|throw|true|false|nothing|undefined|quote|include|let|do|begin|Union|println|readline)\b/g,
+                match => `<span style="color: #0000FF;">${match}</span>`
+            );
+            
+            // Highlight numbers
+            translatedCode = translatedCode.replace(/\b\d+\b/g,
+                match => `<span style="color: #FF0000;">${match}</span>`
+            );
+
+            document.getElementById('julia-code').innerHTML = translatedCode;
+        }
+
+        // Add example code when the page loads
+        window.onload = function() {
+            const exampleCode = 
+`함수 더하기(a, b)
+    만약 a > 0
+        복귀 a + b
+    끝
+    복귀 b
+끝
+
+출력(더하기(10, 5))`;
+            document.getElementById('korean-code').value = exampleCode;
+            translateCode();
+        }
+    </script>
+</body>
+</html>
